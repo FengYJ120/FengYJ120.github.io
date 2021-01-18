@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ZERO</title>
+  
+  
+  <link href="http://www.zero-jan.xyz/atom.xml" rel="self"/>
+  
+  <link href="http://www.zero-jan.xyz/"/>
+  <updated>2021-01-18T12:17:42.194Z</updated>
+  <id>http://www.zero-jan.xyz/</id>
+  
+  <author>
+    <name>ZERO JAN</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello world</title>
+    <link href="http://www.zero-jan.xyz/2021/01/14/hello-world/"/>
+    <id>http://www.zero-jan.xyz/2021/01/14/hello-world/</id>
+    <published>2021-01-14T14:12:20.000Z</published>
+    <updated>2021-01-18T12:17:42.194Z</updated>
+    
+    
+    <summary type="html">第一篇文章</summary>
+    
+    
+    
+    <category term="资源" scheme="http://www.zero-jan.xyz/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Typora使用教程</title>
+    <link href="http://www.zero-jan.xyz/2020/08/01/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://www.zero-jan.xyz/2020/08/01/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2020-08-01T07:06:00.000Z</published>
+    <updated>2021-01-18T12:17:42.194Z</updated>
+    
+    
+    <summary type="html">Typora使用教程</summary>
+    
+    
+    
+    <category term="技术" scheme="http://www.zero-jan.xyz/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+</feed>
