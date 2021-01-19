@@ -232,13 +232,6 @@
                   <ul class="sub-menu">
                     
                       <li>
-                        <a href="/analytics/">
-                          <i class="fa fa-line-chart" aria-hidden="true"></i>
-                          统计
-                        </a>
-                      </li>
-                    
-                      <li>
                         <a href="/tags">
                           <i class="fa fa-tags" aria-hidden="true"></i>
                           标签
@@ -385,7 +378,7 @@
         <span class="post-meta-item-icon">
           <i class="iconfont icon-attention"></i>
         </span>
-        <span class="post-meta-item-text">本页共<span id="busuanzi_value_page_pv"> </span>次阅读
+        <span class="post-meta-item-text">本页共<span id="busuanzi_value_page_pv"> 520</span>次阅读
         </span>
     </header>
   </div>
@@ -397,7 +390,7 @@
       标签云</h1>
       <span class="cat-des">
         <p>
-          Tags 0</p>
+          Tags 2</p>
       </span>
     </header>
     <div id="main-part">
@@ -406,7 +399,7 @@
           <div class="tag-cloud-title">
           </div>
           <div class="tag-cloud-tags">
-          
+          <a href="/tags/Typora/" style="font-size: 15px; color: #f66">Typora</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 15px; color: #f66">测试</a>
           </div>
         </div>
 
@@ -419,6 +412,24 @@
                 <i class="fa fa-tags"></i>&nbsp;&nbsp; 标签
             </div>
             <div class="tag-chips">
+                
+                
+                <a href="/tags/Typora/" title="Typora: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Typora" style="background-color: #F9EBEA;">Typora
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%B5%8B%E8%AF%95/" title="测试: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="测试" style="background-color: #F5EEF8;">测试
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
         </div>
@@ -497,6 +508,38 @@
 
 </style>
 
+        
+        <link rel="stylesheet" type="text/css" href="https://blinkfox.github.io/libs/jqcloud/jqcloud.css">
+<link rel="stylesheet" type="text/css" href="https://blinkfox.github.io/libs/aos/aos.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<script type="text/javascript" src="https://blinkfox.github.io/libs/aos/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div class="tag-title center-align">
+            <i class="fa fa-tags"></i>&nbsp;&nbsp; 标签云
+        </div>
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://blinkfox.github.io/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud( [{"text":"Typora","weight":1,"link":"/tags/Typora/"},{"text":"测试","weight":1,"link":"/tags/测试/"}], {
+        autoResize: true
+    });
+</script>
         
 
       
@@ -628,6 +671,8 @@
 </footer>
 
 
+<script type="text/javascript" src="/js/linkcard.js"></script>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/lib.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/InsightSearch.js"></script>
@@ -757,13 +802,6 @@
         </a>
         
           <ul class="sub-menu">
-            
-              <li>
-                <a href="/analytics/">
-                  <i class="fa fa-line-chart" aria-hidden="true"></i>
-                  统计
-                </a>
-              </li>
             
               <li>
                 <a href="/tags">
@@ -985,7 +1023,7 @@
     </div>   
     <canvas id="night-mode-cover"></canvas> 
         <div class="changeSkin-gear no-select">
-        <div class="keys" id="setbtn"> <span id="open-skinMenu"> 切换壁纸 | SCHEME TOOL 
+        <div class="keys" id="setbtn"> <span id="open-skinMenu"> SCHEME TOOL 
             &nbsp;<i class="iconfont icon-gear inline-block rotating"></i> </span></div>
     </div><!-- skin.end -->
 

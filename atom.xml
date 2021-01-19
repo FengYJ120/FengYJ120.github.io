@@ -6,7 +6,7 @@
   <link href="http://www.zero-jan.xyz/atom.xml" rel="self"/>
   
   <link href="http://www.zero-jan.xyz/"/>
-  <updated>2021-01-18T12:17:42.194Z</updated>
+  <updated>2021-01-19T07:45:27.824Z</updated>
   <id>http://www.zero-jan.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.zero-jan.xyz/2021/01/14/hello-world/"/>
     <id>http://www.zero-jan.xyz/2021/01/14/hello-world/</id>
     <published>2021-01-14T14:12:20.000Z</published>
-    <updated>2021-01-18T12:17:42.194Z</updated>
+    <updated>2021-01-19T07:45:27.824Z</updated>
     
     
     <summary type="html">第一篇文章</summary>
@@ -31,6 +31,8 @@
     <category term="资源" scheme="http://www.zero-jan.xyz/categories/%E8%B5%84%E6%BA%90/"/>
     
     
+    <category term="测试" scheme="http://www.zero-jan.xyz/tags/%E6%B5%8B%E8%AF%95/"/>
+    
   </entry>
   
   <entry>
@@ -38,7 +40,7 @@
     <link href="http://www.zero-jan.xyz/2020/08/01/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     <id>http://www.zero-jan.xyz/2020/08/01/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
     <published>2020-08-01T07:06:00.000Z</published>
-    <updated>2021-01-18T12:17:42.194Z</updated>
+    <updated>2021-01-19T07:44:59.968Z</updated>
     
     
     <summary type="html">Typora使用教程</summary>
@@ -47,6 +49,8 @@
     
     <category term="技术" scheme="http://www.zero-jan.xyz/categories/%E6%8A%80%E6%9C%AF/"/>
     
+    
+    <category term="Typora" scheme="http://www.zero-jan.xyz/tags/Typora/"/>
     
   </entry>
   
