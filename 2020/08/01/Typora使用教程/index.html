@@ -74,7 +74,7 @@
   </script>
 <meta name="generator" content="Hexo 5.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="ZERO" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="ZERO" type="application/atom+xml">
 </head> 
 
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
@@ -525,7 +525,8 @@
 </tr>
 </tbody></table>
 <h2 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a><strong>块元素</strong></h2><h3 id="换行符"><a href="#换行符" class="headerlink" title="换行符"></a><strong>换行符</strong></h3><p>在Typora中只需回车即可创建新段落</p>
-<h3 id="标题级别"><a href="#标题级别" class="headerlink" title="标题级别"></a><strong>标题级别</strong></h3><h1 id="一级标题-快捷键为-Ctrl-1"><a href="#一级标题-快捷键为-Ctrl-1" class="headerlink" title="一级标题 快捷键为 Ctrl + 1"></a>一级标题 快捷键为 Ctrl + 1</h1><p>## 二级标题 快捷键为 Ctrl + 2<br>……<br>###### 六级标题 快捷键为 Ctrl + 6</p>
+<h3 id="标题级别"><a href="#标题级别" class="headerlink" title="标题级别"></a><strong>标题级别</strong></h3><p>#：一级标题，快捷键为 Ctrl + 1</p>
+<p>##：二级标题，快捷键为 Ctrl + 2<br>……<br>######：六级标题，快捷键为 Ctrl + 6</p>
 <h3 id="引用文字"><a href="#引用文字" class="headerlink" title="引用文字"></a><strong>引用文字</strong></h3><p>&gt; + 空格 + 引用文字</p>
 <h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a><strong>无序列表</strong></h3><p>使用 <code>+ </code>、<code>-</code> 、<code>* </code>创建无序列表，任意数字开始+空格创建有序列表</p>
 <ul>
@@ -545,11 +546,12 @@
 <li><p>插入行内代码，即插入一个单词或者一句代码的情况，使用 <code>code</code>这样的形式插入</p>
 </li>
 <li><p>插入多行代码输入3个反引号（`） + 回车，并在后面选择一个语言名称即可实现语法高亮</p>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">def <span class="title">helloworld</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	<span class="title">printf</span><span class="params">(<span class="string">"hello,world!"</span>)</span></span>;</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">def helloworld()
+	printf("hello,world!");<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="数学表达式"><a href="#数学表达式" class="headerlink" title="数学表达式"></a><strong>数学表达式</strong></h3></li>
 </ul>
 <p>当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。根据需要加载 Mathjax 对数学公式进行渲染。</p>
-<p>按下 <code>$$</code>，然后按下回车键，即可进行数学公式的编辑。<br>$$<br>\mathbf{V}_1\times\mathbf{V}_2 = \mathbf{X}_3<br>$$</p>
+<p>按下 <code>$$</code>，然后按下回车键，即可进行数学公式的编辑。<br>$$<br>    \mathbf{V}_1\times\mathbf{V}_2 = \mathbf{X}_3<br>$$</p>
 <h3 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a><strong>插入表格</strong></h3><p>输入 <code>| 表头1 | 表头2 |</code>并回车。即可创建一个包含2列表。快捷键 <code>Ctrl + T</code>弹出对话框。</p>
 <table>
 <thead>
