@@ -32,16 +32,6 @@
 
   <!-- Baidu Analytics -->
 
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?b05d6287bdeab72f3886bffe3cff054a";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
   
   <!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
   " type="text/css" media="all"> -->
@@ -385,7 +375,22 @@
   
   <div id="content" class="site-content">
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      
+      <div class="poem-wrap">
+    <div class="poem-border poem-left"></div>
+    <div class="poem-border poem-right"></div>
+    <h1>念两句诗</h1>
+    <p id="poem">正在加载今日诗词....</p>
+    <p id="info"></p>
+</div>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+    var poem =  result.data.content;
+    var info = "【"+result.data.origin.dynasty+"】"+ result.data.origin.author +"《" + result.data.origin.title + "》";
+    document.getElementById("poem").value(poem);
+    document.getElementById("info").value(info);
+    })
+</script>
       <!-- .entry-content -->
       <!-- 
 
