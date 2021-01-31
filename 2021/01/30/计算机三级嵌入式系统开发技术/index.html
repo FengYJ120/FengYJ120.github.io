@@ -497,7 +497,7 @@
 <h4 id="处理器的组成"><a href="#处理器的组成" class="headerlink" title="处理器的组成"></a>处理器的组成</h4><ol>
 <li>能按照指令的规定高速度完成二进制数据算术和逻辑运算的部件称为“处理器”</li>
 <li>它由<strong>运算器</strong>、<strong>控制器</strong>、<strong>寄存器</strong>、<strong>高速缓冲存储器（Cache）</strong>等部件组成，结构相当复杂。</li>
-<li>处理器的所有组成部分都可以制作在一块大小仅为几cm^2^的半导体芯片上。</li>
+<li>处理器的所有组成部分都可以制作在一块大小仅为几cm<sup>2</sup>的半导体芯片上。</li>
 </ol>
 <h4 id="嵌入式系统中的处理器分类"><a href="#嵌入式系统中的处理器分类" class="headerlink" title="嵌入式系统中的处理器分类"></a>嵌入式系统中的处理器分类</h4><ol>
 <li><strong>中央处理器（CPU）</strong><br>负责运行系统软件和应用软件的主处理器</li>
@@ -520,7 +520,7 @@
 <h4 id="影响程序（指令）执行速度的因素"><a href="#影响程序（指令）执行速度的因素" class="headerlink" title="影响程序（指令）执行速度的因素"></a>影响程序（指令）执行速度的因素</h4><p>​    <strong>主频</strong>、<strong>指令系统</strong>、<strong>Cache的容量与结构和逻辑结构</strong>。</p>
 <h4 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h4><ol>
 <li><strong>易失性存储器</strong><br>即掉电后信息丢失<br>SARM（静态随机存取存储器）、DRAM（动态随机存取存储器）</li>
-<li><strong>非易失性存储器</strong><br>E^2^PROM（电可擦可编程只读存储器）、Falsh ROM、磁盘和光盘存储器<ul>
+<li><strong>非易失性存储器</strong><br>E<sup>2</sup>PROM（电可擦可编程只读存储器）、Falsh ROM、磁盘和光盘存储器<ul>
 <li>说明：非易失性存储器有多种类型。以前使用较多的是Mask ROM和E^2^PROM，<strong>目前使用较多是闪存</strong>，即Falsh Memory。 </li>
 <li>Mask ROM是基于掩膜工艺技术的只读存储器，一旦生产出来信息不可改变，主要用于<strong>不可升级的成熟产品存储程序</strong>或<strong>不变的参数等信息</strong>；</li>
 <li>Falsh Memory是一种长寿命的非易失性存储器，是近些年应用最广的只读存储器。</li>
@@ -568,34 +568,26 @@
 <li>按产品形态分类<br><strong>系统级产品</strong>、<strong>板级产品</strong>和<strong>片级产品</strong></li>
 <li>按软硬件复杂程度分类<br><strong>低端系统</strong>、<strong>中端系统</strong>和<strong>高端系统</strong></li>
 </ol>
-<h4 id="不同类型嵌入式系统的比较"><a href="#不同类型嵌入式系统的比较" class="headerlink" title="不同类型嵌入式系统的比较"></a>不同类型嵌入式系统的比较</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">硬件特征</th>
-<th align="center">软件特征</th>
-<th align="center">应用举例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">低端系统</td>
-<td align="center">采用4位/8位单片机</td>
-<td align="center">不使用操作系统，由监控程序对系统进行控制</td>
-<td align="center">在<strong>工控领域</strong>和<strong>白色家电</strong>领域占主导地位</td>
-</tr>
-<tr>
-<td align="center">中端系统</td>
-<td align="center">采用8位/16位单片机或32位处理器</td>
-<td align="center">使用小型嵌入式操作系统，应用程序规模较小，用户界面比较简单</td>
-<td align="center">普通手机、摄像机、录像机、电视游戏机等（2G）</td>
-</tr>
-<tr>
-<td align="center">高端系统</td>
-<td align="center">采用32位/64位处理器，支持<strong>连接网络</strong></td>
-<td align="center">操作系统功能比较齐全，使用图形用户界面，应用软件可更新和扩展</td>
-<td align="center">智能手机、掌上计算机、路由器、气象数据处理设备等</td>
-</tr>
-</tbody></table>
+<h4 id="不同类型嵌入式系统的比较"><a href="#不同类型嵌入式系统的比较" class="headerlink" title="不同类型嵌入式系统的比较"></a>不同类型嵌入式系统的比较</h4><ol>
+<li>低端系统<ul>
+<li>硬件特征<br>采用4位/8位单片机</li>
+<li>软件特征<br>不使用操作系统，由监控程序对系统进行控制</li>
+<li>应用举例<br>在<strong>工控领域</strong>和<strong>白色家电</strong>领域占主导地位</li>
+</ul>
+</li>
+<li>中端系统<ul>
+<li>硬件特征<br>采用8位/16位单片机或32位处理器</li>
+<li>软件特征<br>使用小型嵌入式操作系统，应用程序规模较小，用户界面比较简单</li>
+<li>应用举例<br>普通手机、摄像机、录像机、电视游戏机等（2G）</li>
+</ul>
+</li>
+<li>高端系统<ul>
+<li>硬件特征<br>采用32位/64位处理器，支持<strong>连接网络</strong></li>
+<li>软件特征<br>操作系统功能比较齐全，使用图形用户界面，应用软件可更新和扩展</li>
+<li>应用举例<br>智能手机、掌上计算机、路由器、气象数据处理设备等</li>
+</ul>
+</li>
+</ol>
 <h3 id="考点4-SoC芯片"><a href="#考点4-SoC芯片" class="headerlink" title="考点4 SoC芯片"></a>考点4 SoC芯片</h3><h3 id="考点5-数字（电子）文本"><a href="#考点5-数字（电子）文本" class="headerlink" title="考点5 数字（电子）文本"></a>考点5 数字（电子）文本</h3><h3 id="考点6-数字图像"><a href="#考点6-数字图像" class="headerlink" title="考点6 数字图像"></a>考点6 数字图像</h3><h3 id="考点7-数字音频与数字视频"><a href="#考点7-数字音频与数字视频" class="headerlink" title="考点7 数字音频与数字视频"></a>考点7 数字音频与数字视频</h3><h3 id="考点8-数字通信"><a href="#考点8-数字通信" class="headerlink" title="考点8 数字通信"></a>考点8 数字通信</h3><h3 id="考点9-计算机网络"><a href="#考点9-计算机网络" class="headerlink" title="考点9 计算机网络"></a>考点9 计算机网络</h3><h3 id="考点10-互联网"><a href="#考点10-互联网" class="headerlink" title="考点10 互联网"></a>考点10 互联网</h3><h2 id="第二章-嵌入式处理器"><a href="#第二章-嵌入式处理器" class="headerlink" title="第二章-嵌入式处理器"></a>第二章-嵌入式处理器</h2><h3 id="考点1-嵌入式处理器的结构类型"><a href="#考点1-嵌入式处理器的结构类型" class="headerlink" title="考点1 嵌入式处理器的结构类型"></a>考点1 嵌入式处理器的结构类型</h3><h3 id="考点2-嵌入式处理器简介"><a href="#考点2-嵌入式处理器简介" class="headerlink" title="考点2 嵌入式处理器简介"></a>考点2 嵌入式处理器简介</h3><h3 id="考点3-ARM处理器概述"><a href="#考点3-ARM处理器概述" class="headerlink" title="考点3 ARM处理器概述"></a>考点3 ARM处理器概述</h3><h3 id="考点4-典型ARM处理器"><a href="#考点4-典型ARM处理器" class="headerlink" title="考点4 典型ARM处理器"></a>考点4 典型ARM处理器</h3><h3 id="考点5-ARM-Cortex处理器"><a href="#考点5-ARM-Cortex处理器" class="headerlink" title="考点5 ARM Cortex处理器"></a>考点5 ARM Cortex处理器</h3><h3 id="考点6-ARM处理器的工作状态及工作模式"><a href="#考点6-ARM处理器的工作状态及工作模式" class="headerlink" title="考点6 ARM处理器的工作状态及工作模式"></a>考点6 ARM处理器的工作状态及工作模式</h3><h3 id="考点7-ARM状态下的寄存器组织"><a href="#考点7-ARM状态下的寄存器组织" class="headerlink" title="考点7 ARM状态下的寄存器组织"></a>考点7 ARM状态下的寄存器组织</h3><h3 id="考点8-ARM处理器的异常"><a href="#考点8-ARM处理器的异常" class="headerlink" title="考点8 ARM处理器的异常"></a>考点8 ARM处理器的异常</h3><h3 id="考点9-ARM的存储器格式及数据类型"><a href="#考点9-ARM的存储器格式及数据类型" class="headerlink" title="考点9 ARM的存储器格式及数据类型"></a>考点9 ARM的存储器格式及数据类型</h3><h3 id="考点10-ARM处理器中的MMU和MPU"><a href="#考点10-ARM处理器中的MMU和MPU" class="headerlink" title="考点10 ARM处理器中的MMU和MPU"></a>考点10 ARM处理器中的MMU和MPU</h3><h3 id="考点11-ARM指令分类及指令格式"><a href="#考点11-ARM指令分类及指令格式" class="headerlink" title="考点11 ARM指令分类及指令格式"></a>考点11 ARM指令分类及指令格式</h3><h3 id="考点12-ARM指令的寻址方式"><a href="#考点12-ARM指令的寻址方式" class="headerlink" title="考点12 ARM指令的寻址方式"></a>考点12 ARM指令的寻址方式</h3><h3 id="考点13-ARM指令集"><a href="#考点13-ARM指令集" class="headerlink" title="考点13 ARM指令集"></a>考点13 ARM指令集</h3><h3 id="考点14-ARM处理器支持的伪指令"><a href="#考点14-ARM处理器支持的伪指令" class="headerlink" title="考点14 ARM处理器支持的伪指令"></a>考点14 ARM处理器支持的伪指令</h3><h3 id="考点15-ARM汇编器所支持的伪指令"><a href="#考点15-ARM汇编器所支持的伪指令" class="headerlink" title="考点15 ARM汇编器所支持的伪指令"></a>考点15 ARM汇编器所支持的伪指令</h3><h3 id="考点16-ARM汇编语言的语句格式"><a href="#考点16-ARM汇编语言的语句格式" class="headerlink" title="考点16 ARM汇编语言的语句格式"></a>考点16 ARM汇编语言的语句格式</h3><h3 id="考点17-汇编语言的程序设计举例"><a href="#考点17-汇编语言的程序设计举例" class="headerlink" title="考点17 汇编语言的程序设计举例"></a>考点17 汇编语言的程序设计举例</h3><h2 id="第三章-嵌入式系统硬件组成"><a href="#第三章-嵌入式系统硬件组成" class="headerlink" title="第三章-嵌入式系统硬件组成"></a>第三章-嵌入式系统硬件组成</h2><h3 id="考点1-嵌入式最小硬件系统"><a href="#考点1-嵌入式最小硬件系统" class="headerlink" title="考点1 嵌入式最小硬件系统"></a>考点1 嵌入式最小硬件系统</h3><h3 id="考点2-基于ARM内核的典型嵌入式应用系统硬件组成"><a href="#考点2-基于ARM内核的典型嵌入式应用系统硬件组成" class="headerlink" title="考点2 基于ARM内核的典型嵌入式应用系统硬件组成"></a>考点2 基于ARM内核的典型嵌入式应用系统硬件组成</h3><h3 id="考点3-ARM的AMBA总线体系结构及标准"><a href="#考点3-ARM的AMBA总线体系结构及标准" class="headerlink" title="考点3 ARM的AMBA总线体系结构及标准"></a>考点3 ARM的AMBA总线体系结构及标准</h3><h3 id="考点4-基于ARM内核的嵌入式芯片的硬件组成"><a href="#考点4-基于ARM内核的嵌入式芯片的硬件组成" class="headerlink" title="考点4 基于ARM内核的嵌入式芯片的硬件组成"></a>考点4 基于ARM内核的嵌入式芯片的硬件组成</h3><h3 id="考点5-常用ARM嵌入式处理芯片"><a href="#考点5-常用ARM嵌入式处理芯片" class="headerlink" title="考点5 常用ARM嵌入式处理芯片"></a>考点5 常用ARM嵌入式处理芯片</h3><h3 id="考点6-嵌入式系统芯片的选型"><a href="#考点6-嵌入式系统芯片的选型" class="headerlink" title="考点6 嵌入式系统芯片的选型"></a>考点6 嵌入式系统芯片的选型</h3><h3 id="考点7-存储器层次结构"><a href="#考点7-存储器层次结构" class="headerlink" title="考点7 存储器层次结构"></a>考点7 存储器层次结构</h3><h3 id="考点8-存储器分类"><a href="#考点8-存储器分类" class="headerlink" title="考点8 存储器分类"></a>考点8 存储器分类</h3><h3 id="考点9-存储器主要性能指标"><a href="#考点9-存储器主要性能指标" class="headerlink" title="考点9 存储器主要性能指标"></a>考点9 存储器主要性能指标</h3><h3 id="考点10-片内存储器"><a href="#考点10-片内存储器" class="headerlink" title="考点10 片内存储器"></a>考点10 片内存储器</h3><h3 id="考点11-片外存储器"><a href="#考点11-片外存储器" class="headerlink" title="考点11 片外存储器"></a>考点11 片外存储器</h3><h3 id="考点12-外部辅助设备"><a href="#考点12-外部辅助设备" class="headerlink" title="考点12 外部辅助设备"></a>考点12 外部辅助设备</h3><h3 id="考点13-通用IO接口GPIO"><a href="#考点13-通用IO接口GPIO" class="headerlink" title="考点13 通用IO接口GPIO"></a>考点13 通用IO接口GPIO</h3><h3 id="考点14-集成电脑互联总线接口I²C"><a href="#考点14-集成电脑互联总线接口I²C" class="headerlink" title="考点14 集成电脑互联总线接口I²C"></a>考点14 集成电脑互联总线接口I²C</h3><h3 id="考点15-串行外设接口SPI"><a href="#考点15-串行外设接口SPI" class="headerlink" title="考点15 串行外设接口SPI"></a>考点15 串行外设接口SPI</h3><h3 id="考点16-串行异步通信接口UART3"><a href="#考点16-串行异步通信接口UART3" class="headerlink" title="考点16 串行异步通信接口UART3"></a>考点16 串行异步通信接口UART3</h3><h3 id="考点17-通用串行总线USB"><a href="#考点17-通用串行总线USB" class="headerlink" title="考点17 通用串行总线USB"></a>考点17 通用串行总线USB</h3><h3 id="考点18-高清多媒体接口HDMI"><a href="#考点18-高清多媒体接口HDMI" class="headerlink" title="考点18 高清多媒体接口HDMI"></a>考点18 高清多媒体接口HDMI</h3><h3 id="考点19-常用简单输入设备"><a href="#考点19-常用简单输入设备" class="headerlink" title="考点19 常用简单输入设备"></a>考点19 常用简单输入设备</h3><h3 id="考点20-常用简单输出设备"><a href="#考点20-常用简单输出设备" class="headerlink" title="考点20 常用简单输出设备"></a>考点20 常用简单输出设备</h3><h3 id="考点21-S3C2410-S3C2440芯片的内部结构"><a href="#考点21-S3C2410-S3C2440芯片的内部结构" class="headerlink" title="考点21 S3C2410,S3C2440芯片的内部结构"></a>考点21 S3C2410,S3C2440芯片的内部结构</h3><h3 id="考点22-S3C2410的时钟及电源管理组件"><a href="#考点22-S3C2410的时钟及电源管理组件" class="headerlink" title="考点22 S3C2410的时钟及电源管理组件"></a>考点22 S3C2410的时钟及电源管理组件</h3><h3 id="考点23-S3C2410-的中断控制器及中断控制"><a href="#考点23-S3C2410-的中断控制器及中断控制" class="headerlink" title="考点23 S3C2410 的中断控制器及中断控制"></a>考点23 S3C2410 的中断控制器及中断控制</h3><h3 id="考点24-S3C2410的实时时钟RTC"><a href="#考点24-S3C2410的实时时钟RTC" class="headerlink" title="考点24 S3C2410的实时时钟RTC"></a>考点24 S3C2410的实时时钟RTC</h3><h3 id="考点25-S3C2410的通用IO结构GPIO"><a href="#考点25-S3C2410的通用IO结构GPIO" class="headerlink" title="考点25 S3C2410的通用IO结构GPIO"></a>考点25 S3C2410的通用IO结构GPIO</h3><h3 id="考点26-S3C2410串行通信接口UART"><a href="#考点26-S3C2410串行通信接口UART" class="headerlink" title="考点26 S3C2410串行通信接口UART"></a>考点26 S3C2410串行通信接口UART</h3><h3 id="考点27-S3C2410的I²C总线接口"><a href="#考点27-S3C2410的I²C总线接口" class="headerlink" title="考点27 S3C2410的I²C总线接口"></a>考点27 S3C2410的I²C总线接口</h3><h3 id="考点28-S3C2410的看门狗定时器"><a href="#考点28-S3C2410的看门狗定时器" class="headerlink" title="考点28 S3C2410的看门狗定时器"></a>考点28 S3C2410的看门狗定时器</h3><h3 id="考点29-基于UART的RS-232-485接口"><a href="#考点29-基于UART的RS-232-485接口" class="headerlink" title="考点29 基于UART的RS-232,485接口"></a>考点29 基于UART的RS-232,485接口</h3><h3 id="考点30-CAN总线接口"><a href="#考点30-CAN总线接口" class="headerlink" title="考点30 CAN总线接口"></a>考点30 CAN总线接口</h3><h3 id="考点31-以太网通信接口"><a href="#考点31-以太网通信接口" class="headerlink" title="考点31 以太网通信接口"></a>考点31 以太网通信接口</h3><h3 id="考点32-常用无线通信接口"><a href="#考点32-常用无线通信接口" class="headerlink" title="考点32 常用无线通信接口"></a>考点32 常用无线通信接口</h3><h2 id="第四章-嵌入式系统软件"><a href="#第四章-嵌入式系统软件" class="headerlink" title="第四章-嵌入式系统软件"></a>第四章-嵌入式系统软件</h2><h3 id="考点1-嵌入式系统的软件组成"><a href="#考点1-嵌入式系统的软件组成" class="headerlink" title="考点1 嵌入式系统的软件组成"></a>考点1 嵌入式系统的软件组成</h3><h3 id="考点2-硬件抽象层与板级支持包"><a href="#考点2-硬件抽象层与板级支持包" class="headerlink" title="考点2 硬件抽象层与板级支持包"></a>考点2 硬件抽象层与板级支持包</h3><h3 id="考点3-引导加载程序"><a href="#考点3-引导加载程序" class="headerlink" title="考点3 引导加载程序"></a>考点3 引导加载程序</h3><h3 id="考点4-设备驱动程序的概念"><a href="#考点4-设备驱动程序的概念" class="headerlink" title="考点4 设备驱动程序的概念"></a>考点4 设备驱动程序的概念</h3><h3 id="考点5-实时系统与实时操作系统"><a href="#考点5-实时系统与实时操作系统" class="headerlink" title="考点5 实时系统与实时操作系统"></a>考点5 实时系统与实时操作系统</h3><h3 id="考点6-嵌入式操作系统概述"><a href="#考点6-嵌入式操作系统概述" class="headerlink" title="考点6 嵌入式操作系统概述"></a>考点6 嵌入式操作系统概述</h3><h3 id="考点7-Linux内核"><a href="#考点7-Linux内核" class="headerlink" title="考点7 Linux内核"></a>考点7 Linux内核</h3><h3 id="考点8-嵌入式Linux操作系统"><a href="#考点8-嵌入式Linux操作系统" class="headerlink" title="考点8 嵌入式Linux操作系统"></a>考点8 嵌入式Linux操作系统</h3><h3 id="考点9-Android操作系统"><a href="#考点9-Android操作系统" class="headerlink" title="考点9 Android操作系统"></a>考点9 Android操作系统</h3><h3 id="考点10-IOS操作系统"><a href="#考点10-IOS操作系统" class="headerlink" title="考点10 IOS操作系统"></a>考点10 IOS操作系统</h3><h3 id="考点11-uC-OS-II操作系统特点"><a href="#考点11-uC-OS-II操作系统特点" class="headerlink" title="考点11 uC,OS-II操作系统特点"></a>考点11 uC,OS-II操作系统特点</h3><h3 id="考点12-uC-OS-II任务及其管理"><a href="#考点12-uC-OS-II任务及其管理" class="headerlink" title="考点12 uC,OS-II任务及其管理"></a>考点12 uC,OS-II任务及其管理</h3><h3 id="考点13-uC-OS-II的系统服务"><a href="#考点13-uC-OS-II的系统服务" class="headerlink" title="考点13 uC,OS-II的系统服务"></a>考点13 uC,OS-II的系统服务</h3><h3 id="考点14-uC-OS-II应用程序设计"><a href="#考点14-uC-OS-II应用程序设计" class="headerlink" title="考点14 uC,OS-II应用程序设计"></a>考点14 uC,OS-II应用程序设计</h3><h2 id="第五章-嵌入式系统开发"><a href="#第五章-嵌入式系统开发" class="headerlink" title="第五章-嵌入式系统开发"></a>第五章-嵌入式系统开发</h2><h3 id="考点1-开发嵌入式系统的基础知识"><a href="#考点1-开发嵌入式系统的基础知识" class="headerlink" title="考点1 开发嵌入式系统的基础知识"></a>考点1 开发嵌入式系统的基础知识</h3><h3 id="考点2-嵌入式系统的开发平台与工具"><a href="#考点2-嵌入式系统的开发平台与工具" class="headerlink" title="考点2 嵌入式系统的开发平台与工具"></a>考点2 嵌入式系统的开发平台与工具</h3><h3 id="考点3-嵌入式系统的调试"><a href="#考点3-嵌入式系统的调试" class="headerlink" title="考点3 嵌入式系统的调试"></a>考点3 嵌入式系统的调试</h3><h3 id="考点4-ADS1-2工具软件"><a href="#考点4-ADS1-2工具软件" class="headerlink" title="考点4 ADS1.2工具软件"></a>考点4 ADS1.2工具软件</h3><h3 id="考点5-RVDS"><a href="#考点5-RVDS" class="headerlink" title="考点5 RVDS"></a>考点5 RVDS</h3><h3 id="考点6-GNU"><a href="#考点6-GNU" class="headerlink" title="考点6 GNU"></a>考点6 GNU</h3><h3 id="考点7-Web服务器"><a href="#考点7-Web服务器" class="headerlink" title="考点7 Web服务器"></a>考点7 Web服务器</h3>
         </div><!-- .entry-content -->
         <div class="single-reward">
