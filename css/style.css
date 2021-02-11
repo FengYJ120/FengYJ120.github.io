@@ -5172,7 +5172,7 @@ li.feature-2 {
 }
 
 .header-info {
-    width: 63%;
+    width: 40%;
     margin: auto;
     font-size: 16px;
     color: #eaeadf;
@@ -7327,7 +7327,7 @@ button.botui-actions-buttons-button {
     padding-bottom: 0;
     padding-top: 1px;
     text-size-adjust: 100%;
-    width: auto
+    width: auto;
 }
 
 .logolink a:hover .sakurasono {
@@ -7357,7 +7357,8 @@ button.botui-actions-buttons-button {
     font-size: 25px;
     border-radius: 9px;
     padding-bottom: 2px;
-    padding-top: 5px
+    padding-top: 5px;
+    font-family: 'Comic Sans MS',sans-serif;
 }
 
 .logolink.moe-mashiro .shironeko {
