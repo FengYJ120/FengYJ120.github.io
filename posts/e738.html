@@ -637,7 +637,7 @@
     <i class="fa fa-book"></i>
     <span class="post-meta-item-text">字数统计: </span>
     <!-- 安装插件npm install hexo-wordcount --save -->
-    <span class="post-count">23.4k字</span>
+    <span class="post-count">30.8k字</span>
   </span>
 </span>
 <span class="bull">
@@ -646,7 +646,7 @@
   <span class="post-meta-item-icon">
     <i class="fa fa-coffee"></i>
     <span class="post-meta-item-text">阅读时长≈</span>
-    <span class="post-count">83分钟</span>
+    <span class="post-count">109分钟</span>
   </span>
 </span>
         
@@ -1987,7 +1987,561 @@ LOPPOUT	STRH R1,[R2]
 <li>AMBA3由<strong>AHB+ATB+AXI+APB</strong>组合构成总线系统</li>
 <li>AMBA4由<strong>ACE+ATB+AXI（包括-Lite，-Stream）+APB</strong>组合构成总线系统，系统总线信号经过桥接器变换成外围总线APB的信号</li>
 </ul>
-<h3 id="考点4-基于ARM内核的嵌入式芯片的硬件组成"><a href="#考点4-基于ARM内核的嵌入式芯片的硬件组成" class="headerlink" title="考点4 基于ARM内核的嵌入式芯片的硬件组成"></a>考点4 基于ARM内核的嵌入式芯片的硬件组成</h3><h4 id="1、存储器及控制器"><a href="#1、存储器及控制器" class="headerlink" title="1、存储器及控制器"></a>1、存储器及控制器</h4><h4 id="2、中断控制器"><a href="#2、中断控制器" class="headerlink" title="2、中断控制器"></a>2、中断控制器</h4><h4 id="3、DMA控制器"><a href="#3、DMA控制器" class="headerlink" title="3、DMA控制器"></a>3、DMA控制器</h4><h4 id="4、电源管理与时钟控制器"><a href="#4、电源管理与时钟控制器" class="headerlink" title="4、电源管理与时钟控制器"></a>4、电源管理与时钟控制器</h4><h4 id="5、GPIO"><a href="#5、GPIO" class="headerlink" title="5、GPIO"></a>5、GPIO</h4><h4 id="6、定时计数组件"><a href="#6、定时计数组件" class="headerlink" title="6、定时计数组件"></a>6、定时计数组件</h4><h4 id="7、模拟通道组件"><a href="#7、模拟通道组件" class="headerlink" title="7、模拟通道组件"></a>7、模拟通道组件</h4><h4 id="8、互联通信组件"><a href="#8、互联通信组件" class="headerlink" title="8、互联通信组件"></a>8、互联通信组件</h4><h3 id="考点5-常用ARM嵌入式处理芯片"><a href="#考点5-常用ARM嵌入式处理芯片" class="headerlink" title="考点5 常用ARM嵌入式处理芯片"></a>考点5 常用ARM嵌入式处理芯片</h3><h3 id="考点6-嵌入式系统芯片的选型"><a href="#考点6-嵌入式系统芯片的选型" class="headerlink" title="考点6 嵌入式系统芯片的选型"></a>考点6 嵌入式系统芯片的选型</h3><h3 id="考点7-存储器层次结构"><a href="#考点7-存储器层次结构" class="headerlink" title="考点7 存储器层次结构"></a>考点7 存储器层次结构</h3><h3 id="考点8-存储器分类"><a href="#考点8-存储器分类" class="headerlink" title="考点8 存储器分类"></a>考点8 存储器分类</h3><h3 id="考点9-存储器主要性能指标"><a href="#考点9-存储器主要性能指标" class="headerlink" title="考点9 存储器主要性能指标"></a>考点9 存储器主要性能指标</h3><h3 id="考点10-片内存储器"><a href="#考点10-片内存储器" class="headerlink" title="考点10 片内存储器"></a>考点10 片内存储器</h3><h3 id="考点11-片外存储器"><a href="#考点11-片外存储器" class="headerlink" title="考点11 片外存储器"></a>考点11 片外存储器</h3><h3 id="考点12-外部辅助设备"><a href="#考点12-外部辅助设备" class="headerlink" title="考点12 外部辅助设备"></a>考点12 外部辅助设备</h3><h3 id="考点13-通用IO接口GPIO"><a href="#考点13-通用IO接口GPIO" class="headerlink" title="考点13 通用IO接口GPIO"></a>考点13 通用IO接口GPIO</h3><h3 id="考点14-集成电脑互联总线接口I2C"><a href="#考点14-集成电脑互联总线接口I2C" class="headerlink" title="考点14 集成电脑互联总线接口I2C"></a>考点14 集成电脑互联总线接口I<sup>2</sup>C</h3><h3 id="考点15-串行外设接口SPI"><a href="#考点15-串行外设接口SPI" class="headerlink" title="考点15 串行外设接口SPI"></a>考点15 串行外设接口SPI</h3><h3 id="考点16-串行异步通信接口UART3"><a href="#考点16-串行异步通信接口UART3" class="headerlink" title="考点16 串行异步通信接口UART3"></a>考点16 串行异步通信接口UART3</h3><h3 id="考点17-通用串行总线USB"><a href="#考点17-通用串行总线USB" class="headerlink" title="考点17 通用串行总线USB"></a>考点17 通用串行总线USB</h3><h3 id="考点18-高清多媒体接口HDMI"><a href="#考点18-高清多媒体接口HDMI" class="headerlink" title="考点18 高清多媒体接口HDMI"></a>考点18 高清多媒体接口HDMI</h3><h3 id="考点19-常用简单输入设备"><a href="#考点19-常用简单输入设备" class="headerlink" title="考点19 常用简单输入设备"></a>考点19 常用简单输入设备</h3><h3 id="考点20-常用简单输出设备"><a href="#考点20-常用简单输出设备" class="headerlink" title="考点20 常用简单输出设备"></a>考点20 常用简单输出设备</h3><h3 id="考点21-S3C2410-S3C2440芯片的内部结构"><a href="#考点21-S3C2410-S3C2440芯片的内部结构" class="headerlink" title="考点21 S3C2410,S3C2440芯片的内部结构"></a>考点21 S3C2410,S3C2440芯片的内部结构</h3><h3 id="考点22-S3C2410的时钟及电源管理组件"><a href="#考点22-S3C2410的时钟及电源管理组件" class="headerlink" title="考点22 S3C2410的时钟及电源管理组件"></a>考点22 S3C2410的时钟及电源管理组件</h3><h3 id="考点23-S3C2410-的中断控制器及中断控制"><a href="#考点23-S3C2410-的中断控制器及中断控制" class="headerlink" title="考点23 S3C2410 的中断控制器及中断控制"></a>考点23 S3C2410 的中断控制器及中断控制</h3><h3 id="考点24-S3C2410的实时时钟RTC"><a href="#考点24-S3C2410的实时时钟RTC" class="headerlink" title="考点24 S3C2410的实时时钟RTC"></a>考点24 S3C2410的实时时钟RTC</h3><h3 id="考点25-S3C2410的通用IO结构GPIO"><a href="#考点25-S3C2410的通用IO结构GPIO" class="headerlink" title="考点25 S3C2410的通用IO结构GPIO"></a>考点25 S3C2410的通用IO结构GPIO</h3><h3 id="考点26-S3C2410串行通信接口UART"><a href="#考点26-S3C2410串行通信接口UART" class="headerlink" title="考点26 S3C2410串行通信接口UART"></a>考点26 S3C2410串行通信接口UART</h3><h3 id="考点27-S3C2410的I2C总线接口"><a href="#考点27-S3C2410的I2C总线接口" class="headerlink" title="考点27 S3C2410的I2C总线接口"></a>考点27 S3C2410的I<sup>2</sup>C总线接口</h3><h3 id="考点28-S3C2410的看门狗定时器"><a href="#考点28-S3C2410的看门狗定时器" class="headerlink" title="考点28 S3C2410的看门狗定时器"></a>考点28 S3C2410的看门狗定时器</h3><h3 id="考点29-基于UART的RS-232-485接口"><a href="#考点29-基于UART的RS-232-485接口" class="headerlink" title="考点29 基于UART的RS-232,485接口"></a>考点29 基于UART的RS-232,485接口</h3><h3 id="考点30-CAN总线接口"><a href="#考点30-CAN总线接口" class="headerlink" title="考点30 CAN总线接口"></a>考点30 CAN总线接口</h3><h3 id="考点31-以太网通信接口"><a href="#考点31-以太网通信接口" class="headerlink" title="考点31 以太网通信接口"></a>考点31 以太网通信接口</h3><h3 id="考点32-常用无线通信接口"><a href="#考点32-常用无线通信接口" class="headerlink" title="考点32 常用无线通信接口"></a>考点32 常用无线通信接口</h3><h2 id="第四章-嵌入式系统软件"><a href="#第四章-嵌入式系统软件" class="headerlink" title="第四章-嵌入式系统软件"></a>第四章-嵌入式系统软件</h2><h3 id="考点1-嵌入式系统的软件组成"><a href="#考点1-嵌入式系统的软件组成" class="headerlink" title="考点1 嵌入式系统的软件组成"></a>考点1 嵌入式系统的软件组成</h3><h3 id="考点2-硬件抽象层与板级支持包"><a href="#考点2-硬件抽象层与板级支持包" class="headerlink" title="考点2 硬件抽象层与板级支持包"></a>考点2 硬件抽象层与板级支持包</h3><h3 id="考点3-引导加载程序"><a href="#考点3-引导加载程序" class="headerlink" title="考点3 引导加载程序"></a>考点3 引导加载程序</h3><h3 id="考点4-设备驱动程序的概念"><a href="#考点4-设备驱动程序的概念" class="headerlink" title="考点4 设备驱动程序的概念"></a>考点4 设备驱动程序的概念</h3><h3 id="考点5-实时系统与实时操作系统"><a href="#考点5-实时系统与实时操作系统" class="headerlink" title="考点5 实时系统与实时操作系统"></a>考点5 实时系统与实时操作系统</h3><h3 id="考点6-嵌入式操作系统概述"><a href="#考点6-嵌入式操作系统概述" class="headerlink" title="考点6 嵌入式操作系统概述"></a>考点6 嵌入式操作系统概述</h3><h3 id="考点7-Linux内核"><a href="#考点7-Linux内核" class="headerlink" title="考点7 Linux内核"></a>考点7 Linux内核</h3><h3 id="考点8-嵌入式Linux操作系统"><a href="#考点8-嵌入式Linux操作系统" class="headerlink" title="考点8 嵌入式Linux操作系统"></a>考点8 嵌入式Linux操作系统</h3><h3 id="考点9-Android操作系统"><a href="#考点9-Android操作系统" class="headerlink" title="考点9 Android操作系统"></a>考点9 Android操作系统</h3><h3 id="考点10-IOS操作系统"><a href="#考点10-IOS操作系统" class="headerlink" title="考点10 IOS操作系统"></a>考点10 IOS操作系统</h3><h3 id="考点11-uC-OS-II操作系统特点"><a href="#考点11-uC-OS-II操作系统特点" class="headerlink" title="考点11 uC,OS-II操作系统特点"></a>考点11 uC,OS-II操作系统特点</h3><h3 id="考点12-uC-OS-II任务及其管理"><a href="#考点12-uC-OS-II任务及其管理" class="headerlink" title="考点12 uC,OS-II任务及其管理"></a>考点12 uC,OS-II任务及其管理</h3><h3 id="考点13-uC-OS-II的系统服务"><a href="#考点13-uC-OS-II的系统服务" class="headerlink" title="考点13 uC,OS-II的系统服务"></a>考点13 uC,OS-II的系统服务</h3><h3 id="考点14-uC-OS-II应用程序设计"><a href="#考点14-uC-OS-II应用程序设计" class="headerlink" title="考点14 uC,OS-II应用程序设计"></a>考点14 uC,OS-II应用程序设计</h3><h2 id="第五章-嵌入式系统开发"><a href="#第五章-嵌入式系统开发" class="headerlink" title="第五章-嵌入式系统开发"></a>第五章-嵌入式系统开发</h2><h3 id="考点1-开发嵌入式系统的基础知识"><a href="#考点1-开发嵌入式系统的基础知识" class="headerlink" title="考点1 开发嵌入式系统的基础知识"></a>考点1 开发嵌入式系统的基础知识</h3><h3 id="考点2-嵌入式系统的开发平台与工具"><a href="#考点2-嵌入式系统的开发平台与工具" class="headerlink" title="考点2 嵌入式系统的开发平台与工具"></a>考点2 嵌入式系统的开发平台与工具</h3><h3 id="考点3-嵌入式系统的调试"><a href="#考点3-嵌入式系统的调试" class="headerlink" title="考点3 嵌入式系统的调试"></a>考点3 嵌入式系统的调试</h3><h3 id="考点4-ADS1-2工具软件"><a href="#考点4-ADS1-2工具软件" class="headerlink" title="考点4 ADS1.2工具软件"></a>考点4 ADS1.2工具软件</h3><h3 id="考点5-RVDS"><a href="#考点5-RVDS" class="headerlink" title="考点5 RVDS"></a>考点5 RVDS</h3><h3 id="考点6-GNU"><a href="#考点6-GNU" class="headerlink" title="考点6 GNU"></a>考点6 GNU</h3><h3 id="考点7-Web服务器"><a href="#考点7-Web服务器" class="headerlink" title="考点7 Web服务器"></a>考点7 Web服务器</h3>
+<h3 id="考点4-基于ARM内核的嵌入式芯片的硬件组成"><a href="#考点4-基于ARM内核的嵌入式芯片的硬件组成" class="headerlink" title="考点4 基于ARM内核的嵌入式芯片的硬件组成"></a>考点4 基于ARM内核的嵌入式芯片的硬件组成</h3><h5 id="基于ARM内核的嵌入式芯片的硬件组成"><a href="#基于ARM内核的嵌入式芯片的硬件组成" class="headerlink" title="基于ARM内核的嵌入式芯片的硬件组成"></a>基于ARM内核的嵌入式芯片的硬件组成</h5><ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320090256437.png" alt="image-20210320090256437"></li>
+</ul>
+<h4 id="1、存储器及控制器"><a href="#1、存储器及控制器" class="headerlink" title="1、存储器及控制器"></a>1、存储器及控制器</h4><ul>
+<li>ARM处理芯片内部硬件中除ARM内核外，最重要的组件就是<strong>存储器及其管理组件</strong>，用于管理和控制片内的SRAM、ROM和Flash ROM，通过<strong>外部存储器</strong>对外部扩展存储器如Flash存储器及DRAM等进行管理与控制</li>
+<li>片内程序存储器通常使用的是<strong>Flash ROM</strong>，片内数据存储器通常使用的是<strong>SRAM</strong></li>
+<li>目前程序存储器的大多采用<strong>Flash存储器</strong>，数据存储器采用<strong>SRAM和DDR或DDR2或普通的DRAM</strong></li>
+<li>高带宽外部存储器控制接口为外部存储器扩展提供了接口，<strong>可扩展程序存储器及数据存储器</strong></li>
+<li>高带宽外部存储器控制接口与AMBA的系统总线<strong>部分相连</strong></li>
+</ul>
+<h4 id="2、中断控制器"><a href="#2、中断控制器" class="headerlink" title="2、中断控制器"></a>2、中断控制器</h4><ul>
+<li>中断控制器负责对其他硬件组件的中断请求进行管理和控制，一般采用<strong>向量中断</strong>（VIC）或<strong>嵌套向量中断</strong>（NVIC）方式管理中断。</li>
+<li>处理中断有两种形式，分别为标准的中断控制器和向量中断控制器（VIC）<ul>
+<li>标准中断控制器在一个外设设备需要服务时，发送一个中断请求信号给处理器核。</li>
+<li>中断处理程序通过读取中断控制器中与各设备对应表示中断请求的寄存器内容，从而判断哪个设备需要服务。</li>
+</ul>
+</li>
+<li>VIC比标准中断控制器的功能更为强大些，<strong>它区分中断的优先级</strong>，简化了判断中断源的过程，只有当一个新的中断其优先级高于当前正在执行的中断处理优先级时，VIC才向内核提出中断请求</li>
+<li>NVIC比VIC更进一步，可以进行<strong>中断的嵌套</strong>，即高优先级的中断可以进入低优先级中断的处理过程中。待高优先级中断处理完成才去继续执行低优先级中断。也有人称之为<strong>抢占式优先级中断</strong>。<em>Cortex-M系列就支持嵌套的向量中断</em></li>
+</ul>
+<h4 id="3、DMA控制器"><a href="#3、DMA控制器" class="headerlink" title="3、DMA控制器"></a>3、DMA控制器</h4><ul>
+<li>ARM处理芯片内部的DMA控制器（即<strong>直接存储器访问控制器</strong>）是一种硬件组件，可将数据块<strong>从外设传输至内存</strong>、<strong>从内存传输至外设</strong>或<strong>从内存传输至内存</strong></li>
+<li>数据传输过程中<strong>不需要CPU参与</strong>，因此可降低处理器的负荷。通过将CPU设为低功率状态并DMA使用控制器传输数据，降低了系统的功耗</li>
+<li>当ARM与串行通信端口、USB接口、CAN接口、以太网接口等通道进行交流时， <strong>它们既可以由ARM内核控制其数据传输， 也可以通过DMA控制器控制数据传输</strong></li>
+</ul>
+<h4 id="4、电源管理与时钟控制器"><a href="#4、电源管理与时钟控制器" class="headerlink" title="4、电源管理与时钟控制器"></a>4、电源管理与时钟控制器</h4><ul>
+<li>ARM处理芯片内部的电源管理主要有<strong>正常工作</strong>模式、<strong>慢时钟</strong>模式、<strong>空闲</strong>模式、<strong>掉电</strong>模式、 <strong>休眠</strong>模式、<strong>深度休眠</strong>模式等以控制不同组件的功耗。</li>
+<li>时钟信号是ARM芯片定时的关键，<strong>时钟控制器</strong>负责对时钟的分配，产生不同频率的定时时钟供片内各组件作为同步时钟使用。<ul>
+<li>例如，有供快速通道的存储器时钟、供DMA控制器及中断控制器的时钟，也有经过桥接器之后经若 干分频得到的慢速时钟供APB总线上的各个不同接口作为同步信号。 </li>
+</ul>
+</li>
+</ul>
+<h4 id="5、GPIO"><a href="#5、GPIO" class="headerlink" title="5、GPIO"></a>5、GPIO</h4><ul>
+<li>GPIO（General Purpose Input Output）即<strong>通用输入/输出端口</strong>。作为输入时具有<strong>缓冲</strong>功能，而作为输出时则具有<strong>锁存</strong>功能，GPIO也可以作为<strong>双向I/O</strong>使用。</li>
+<li>在ARM处理芯片中，GPIOssss引脚通常是<strong>多功能使用</strong>的，目的是为了减少芯片引脚数，缩小PCB面积，以减少功耗。有的引脚是双功能的，也有三功能甚至四功能的引脚，不同厂家的ARM处理芯片其具体引脚的定义不同。</li>
+</ul>
+<h4 id="6、定时计数组件"><a href="#6、定时计数组件" class="headerlink" title="6、定时计数组件"></a>6、定时计数组件</h4><h5 id="ARM处理芯片内部的计数组件"><a href="#ARM处理芯片内部的计数组件" class="headerlink" title="ARM处理芯片内部的计数组件"></a>ARM处理芯片内部的计数组件</h5><ul>
+<li><strong>WDT</strong>（看门狗定时器）<ul>
+<li>WDT是能使系统定时复位的硬件或软件</li>
+<li>看门狗的主要功能是当处理器在进入错误状态后的一定时间内复位，保证系统的稳定运行</li>
+</ul>
+</li>
+<li><strong>Timer通用定时器</strong><ul>
+<li>Timer是通用定时器，可用于一般的定时</li>
+</ul>
+</li>
+<li><strong>RTC</strong><ul>
+<li>RTC可提供年月日时分秒，使应用系统具有自己独立的日期和时间</li>
+</ul>
+</li>
+<li><strong>PWM</strong>（脉冲宽度调制器）<ul>
+<li>PWM用于脉冲宽度的调制，比如电机控制、用于变频调整等多种场合</li>
+</ul>
+</li>
+<li>以上所有与定时有关的组件的一个共同特点就是，对特定输入的时钟<strong>通过分频后接入计数器进行加1或减 1计数</strong>，计数达到预定的数值后将<strong>引发一个中断并置一定的标志位</strong>。</li>
+</ul>
+<h4 id="7、模拟通道组件"><a href="#7、模拟通道组件" class="headerlink" title="7、模拟通道组件"></a>7、模拟通道组件</h4><h5 id="ARM处理芯片内部的模拟组件"><a href="#ARM处理芯片内部的模拟组件" class="headerlink" title="ARM处理芯片内部的模拟组件"></a>ARM处理芯片内部的模拟组件</h5><ul>
+<li><strong>ADC</strong><ul>
+<li>ADC是模拟到数字的转换器，可完成<strong>从模拟信号到数字信号</strong>的变换。对于嵌入式系统而言它是一个模拟输入的组件。ARM芯片内部只有一个变换单元，分辨率一般为10位和12位居多。</li>
+</ul>
+</li>
+<li><strong>DAC</strong><ul>
+<li>DAC是数字到模拟的变换器，可完成<strong>从数字信号到模拟信号</strong>的变换。对于嵌入式系统而言它是一个模拟输出组件。一般内置DAC有10位、12位、14位等分辨率。</li>
+</ul>
+</li>
+<li><strong>比较器</strong><ul>
+<li>比较器可方便地<strong>对模拟电压信号等与基准信号相比较</strong> ，可监测电源电压、芯片温度等，通过比较采样值与基准值，就可以判断是否欠压、温度是否超高等。</li>
+</ul>
+</li>
+</ul>
+<h4 id="8、互联通信组件"><a href="#8、互联通信组件" class="headerlink" title="8、互联通信组件"></a>8、互联通信组件</h4><h5 id="ARM处理芯片内部的互联通信组件"><a href="#ARM处理芯片内部的互联通信组件" class="headerlink" title="ARM处理芯片内部的互联通信组件"></a>ARM处理芯片内部的互联通信组件</h5><ul>
+<li><strong>UART</strong>（通用异步收发器）<ul>
+<li>UART为标准的串行通信接口，字符格式按照低位在前、高位在后的次序进行传输，1位起始位，5~8位数据位，1位奇偶校验位，1~2位停止位</li>
+</ul>
+</li>
+<li><strong>I<sup>2</sup>C</strong>（Inter-Integrated Circuit）<ul>
+<li>I<sup>2</sup>C是集成电路互连的一种总线标准，只有两根信号线，一根是时钟线SCL，一根是数据线SDA（双向三态），<strong>即可完成数据的传输操作</strong></li>
+<li>具有特定的起始位和终止位，可完成同步半双工串行通信方式，常用于<em>板级芯片之间的短距离低速通信</em></li>
+</ul>
+</li>
+<li><strong>I<sup>2</sup>S</strong>（Inter-Integrated Circuit Sound Bus）<ul>
+<li>I<sup>2</sup>S是一种面向多媒体应用的音频串行总线，是SONY、PHILIPS等公司共同推出的接口标准，主要针对数字音频设备如便携CD机、数字音频处瑾器等，专用于这些<em>音频设备之间的数据传输</em>。</li>
+</ul>
+</li>
+<li><strong>SPI</strong>（Serial Peripheral Interface）<ul>
+<li>SPI是串行外设接口，总线系统是一种同步串行外设接口，可以使MCU与各种外围设备以串行方式进行通信</li>
+<li>通常用四线制，包括<strong>MISO</strong>(主输入从输出)、<strong>MOSI</strong>(主输出从输入)、<strong>SSL</strong>(芯片选择)、<strong>SCK</strong>(时钟)</li>
+<li>可完成全双工的同步串行通信，用于<em>板级芯片之间的短距离通信</em> </li>
+</ul>
+</li>
+<li><strong>CAN</strong>（Controller Area Network）<ul>
+<li>CAN是控制器局域网，仅有CANH和CANL两根信号线，采用差分传输的方式，可以进行远距离（1200m）多机通信。主要用于<em>要求抗干扰能力强的工业控制领域</em> ，可组成多主多从系统</li>
+</ul>
+</li>
+<li><strong>USB</strong>（Universal Serial Bus）<ul>
+<li>USB是一种通用串行总线，主要应用于<em>与外部设备的短距离通信</em>，采用差分方式传输数据，速度快，效率高，是目前<strong>应用最广</strong>的串行总线接口形式。</li>
+</ul>
+</li>
+<li><strong>Ethernet</strong><ul>
+<li>Ethernet是以太网通信接口，在许多新型ARM芯片（如Cortex-M3系列）中均集成了这一接口，使连接以太网变得非常容易，外部仅需要连接一个RJ-45连接器即可。</li>
+</ul>
+</li>
+</ul>
+<h3 id="考点5-常用ARM嵌入式处理芯片"><a href="#考点5-常用ARM嵌入式处理芯片" class="headerlink" title="考点5 常用ARM嵌入式处理芯片"></a>考点5 常用ARM嵌入式处理芯片</h3><h4 id="1、NXP的典型ARM芯片（荷兰恩智浦半导体公司）"><a href="#1、NXP的典型ARM芯片（荷兰恩智浦半导体公司）" class="headerlink" title="1、NXP的典型ARM芯片（荷兰恩智浦半导体公司）"></a>1、NXP的典型ARM芯片（荷兰恩智浦半导体公司）</h4><ul>
+<li><strong>基于ARM7TDMI-S核的LPC2000系列</strong></li>
+<li>基于ARM7TDMI-S核的LH7系列</li>
+<li>基于ARM9的LPC2900以及LPC3000系列</li>
+<li>基于ARM922T的LH7A系列</li>
+<li>基于Cortex-M0的LPC1000系列</li>
+<li>基于Cortex-M3的LPC1300/LPC1700/LPC1800系列<ul>
+<li>以第二代Cortex-M3为内核，主频高达100MHz，带独立的本地指令和数据总线以及用于外设的第三条总线，运行速度高达1.25MIPS/MHz,特别适用于静电设计、照明设备、工业网络、报警系统、白色家电、电机控制等领域</li>
+</ul>
+</li>
+<li>基于Cortex-M4+M0双核的LPC4000系列<ul>
+<li>基于Cortex-M4内核的DSP完美融合了微控制器M0的基本功能和M4的高性能数字信号处理功能</li>
+</ul>
+</li>
+</ul>
+<h4 id="2、TI的典型ARM芯片（美国德州仪器公司）"><a href="#2、TI的典型ARM芯片（美国德州仪器公司）" class="headerlink" title="2、TI的典型ARM芯片（美国德州仪器公司）"></a>2、TI的典型ARM芯片（美国德州仪器公司）</h4><ul>
+<li><strong>主要特色是全部内置10位ADC</strong></li>
+<li>基于ARM9的ARM芯片</li>
+<li>基于ARM Cortex-M3的低成本低功耗LM3SX00系列</li>
+<li>基于ARM Cortex-M3的高性能LM3S1000系列</li>
+<li>基于ARM Cortex-M3带CAN控制器的LM3S2000系列</li>
+<li>基于ARM Cortex-M3带USB接口的LM3S3000系列</li>
+<li>基于ARM Cortex-M3带USB+CAN接口的LM3S5000系列</li>
+<li>基于ARM Cortex-M3带Ethernet接口的LM3S6000系列</li>
+<li>基于ARM Cortex-M3带Ethernet+CAN接口的LM3S8000系列</li>
+<li>基于ARM Cortex-M3带Ethernet+USB+CAN接口的LM3S9000系列</li>
+<li>基于ARM Cortex-M3带Cortex-M4的LM4F系列<ul>
+<li>内置FPU浮点运算部件</li>
+</ul>
+</li>
+<li>基于ARM Cortex-R的TMS570LS2x等</li>
+<li>基于ARM Cortex-M4F的LM4F系列</li>
+<li>基于高端应用的Cortex-A8的AM35X/AM37X/AM38X</li>
+<li>基于C674+ARM Cortex-A8的TMS320C6A8167和TMS320C6A8168</li>
+<li>基于ARM Cortex-A的0MAP4系列</li>
+<li>基于ARM Cortex-A15的0MPA5系列<ul>
+<li>主要用于智能手机及移动计算</li>
+</ul>
+</li>
+</ul>
+<h4 id="3、Samsung的典型ARM芯片（韩国三星公司）"><a href="#3、Samsung的典型ARM芯片（韩国三星公司）" class="headerlink" title="3、Samsung的典型ARM芯片（韩国三星公司）"></a>3、Samsung的典型ARM芯片（韩国三星公司）</h4><ul>
+<li><strong>最早得到应用</strong>的ARM处理器芯片厂商</li>
+<li><strong>基于ARM7TDMI内核的S3C44B0</strong><ul>
+<li>专为手持设备使用</li>
+</ul>
+</li>
+<li>基于ARM920T内核的S3C24xx系列</li>
+<li>基于ARM11的S3C6xxx系列</li>
+<li>基于ARM Cortex-A8的S5PC100系列</li>
+<li>基于ARM Cortex-A9的Exynos4系列</li>
+<li>基于ARM Cortex-A15的Exynos5系列</li>
+</ul>
+<h4 id="4、Atmel的典型ARM芯片（美国艾特美尔公司）"><a href="#4、Atmel的典型ARM芯片（美国艾特美尔公司）" class="headerlink" title="4、Atmel的典型ARM芯片（美国艾特美尔公司）"></a>4、Atmel的典型ARM芯片（美国艾特美尔公司）</h4><ul>
+<li>基于ARM7TDMI内核的SAM7X系列</li>
+<li>基于ARM926EJ-S的SAM9X系列</li>
+<li>基于ARM Cortex-M3的SAM3X系列</li>
+<li>基于ARM Cortex-M4的SAM4X系列</li>
+</ul>
+<h4 id="5、ST的典型ARM芯片（法国意法半导体公司）"><a href="#5、ST的典型ARM芯片（法国意法半导体公司）" class="headerlink" title="5、ST的典型ARM芯片（法国意法半导体公司）"></a>5、ST的典型ARM芯片（法国意法半导体公司）</h4><ul>
+<li>基于ARM7TDMI内核的STR7系列</li>
+<li>基于ARM9E内核的STR9系列</li>
+<li>基于ARM Cortex-M0的STM32F0系列<ul>
+<li>有12位的ADC和DAC，带比较器</li>
+</ul>
+</li>
+<li>基于ARM Cortex-M3的主流ARM芯片STM32F1系列</li>
+<li>基于ARM Cortex-M3的低功耗ARM芯片STM32L1系列</li>
+<li>基于ARM Cortex-M3的高性能ARM芯片STM32F2系列</li>
+<li>基于ARM Cortex-M4的高性能ARM芯片STM32F4系列</li>
+</ul>
+<h4 id="6、Freescale的典型ARM芯片（美国飞思卡尔公司）"><a href="#6、Freescale的典型ARM芯片（美国飞思卡尔公司）" class="headerlink" title="6、Freescale的典型ARM芯片（美国飞思卡尔公司）"></a>6、Freescale的典型ARM芯片（美国飞思卡尔公司）</h4><ul>
+<li>基于ARM Cortex-M0的Kinetis L系列</li>
+<li>基于ARM Cortex-M4的Kinetis K系列<ul>
+<li><strong>有超过200种不同结构的低功耗、高性能、可兼容的微控制器</strong></li>
+</ul>
+</li>
+<li>基于ARM Cortex-M4的Kinetis X系列<ul>
+<li>速度最快的微控制器</li>
+</ul>
+</li>
+</ul>
+<h4 id="7、Nuvoton的典型ARM芯片（台湾新唐科技公司）"><a href="#7、Nuvoton的典型ARM芯片（台湾新唐科技公司）" class="headerlink" title="7、Nuvoton的典型ARM芯片（台湾新唐科技公司）"></a>7、Nuvoton的典型ARM芯片（台湾新唐科技公司）</h4><ul>
+<li>NUC100系列</li>
+<li>带USB全速2.0设备的低功耗NUC120/NUC122系列</li>
+<li>内嵌CAN控制器局域网2.0B标准的NUC130/140系列</li>
+<li>继M051系列之后的低管脚、低价位的Mini51系列</li>
+<li>以200uA/MHz常态低功耗运行的Nano100超低功耗系列<ul>
+<li>应用领域相当广泛，包括<strong>触控屏幕、USB连接、直流无刷电机、汽车电子、医疗电子</strong>等。此前还有ARM7和ARM9产品</li>
+</ul>
+</li>
+</ul>
+<h4 id="8、Intel的典型ARM芯片（美国英特尔公司）"><a href="#8、Intel的典型ARM芯片（美国英特尔公司）" class="headerlink" title="8、Intel的典型ARM芯片（美国英特尔公司）"></a>8、Intel的典型ARM芯片（美国英特尔公司）</h4><ul>
+<li>XScale核的PXA250和PXA270</li>
+</ul>
+<h4 id="9、其他ARM芯片厂家"><a href="#9、其他ARM芯片厂家" class="headerlink" title="9、其他ARM芯片厂家"></a>9、其他ARM芯片厂家</h4><ul>
+<li>美国益登科技基于ARM Cortex-M3处理器的新型Precision32系列产品，包括SIM3UIxx和SIM3CIxx系列</li>
+<li>其他生产ARM芯片的国外厂家还有Alilent、Cirrus、Hynix、Linkup、Motorola、NEC、IVetSilion、OKI、Parthus、Qualcomm、Rohm、Triscend等，国内也有购买ARM内核的科研院所和生产厂家</li>
+</ul>
+<h3 id="考点6-嵌入式系统芯片的选型"><a href="#考点6-嵌入式系统芯片的选型" class="headerlink" title="考点6 嵌入式系统芯片的选型"></a>考点6 嵌入式系统芯片的选型</h3><h5 id="嵌入式系统芯片的选型应该遵循的原则"><a href="#嵌入式系统芯片的选型应该遵循的原则" class="headerlink" title="嵌入式系统芯片的选型应该遵循的原则"></a>嵌入式系统芯片的选型应该遵循的原则</h5><ol>
+<li><strong>性价比原则</strong><ol>
+<li>性能：应该选择完全嫩满足要求且略有余量的嵌入式处理芯片，够用就行</li>
+<li>价格：在满足需求的前提下选择价格便宜的</li>
+</ol>
+</li>
+<li><strong>参数选择原则</strong><ol>
+<li>ARM内核</li>
+<li>系统时钟频率</li>
+<li>芯片内部存储器的容量</li>
+<li>片内外围电路<ul>
+<li>GPIO外部引脚条数</li>
+<li>定时计数器</li>
+<li>LCD液晶显示控制器</li>
+<li>多核处理器</li>
+<li>ADC</li>
+<li>通信接口</li>
+</ul>
+</li>
+<li>其他因素</li>
+</ol>
+</li>
+</ol>
+<h3 id="考点7-存储器层次结构"><a href="#考点7-存储器层次结构" class="headerlink" title="考点7 存储器层次结构"></a>考点7 存储器层次结构</h3><ul>
+<li>对于CPU使用最频繁的少量程序代码和数据用<strong>SRAM</strong>作为Cache存放</li>
+<li>正在运行中的程序的大部分数据和代码存放在<strong>主存</strong>中</li>
+<li>尚未启动运行的其余程序或数据则存放在容量大的外部存储器如磁盘（<strong>虚拟内存</strong>）中待命</li>
+</ul>
+<h5 id="存储器三个层次结构（除内核寄存器外）"><a href="#存储器三个层次结构（除内核寄存器外）" class="headerlink" title="存储器三个层次结构（除内核寄存器外）"></a>存储器三个层次结构（除内核寄存器外）</h5><ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320104215426.png" alt="image-20210320104215426"></li>
+<li>最上层是处理器内部的通用寄存器，是速度最快的一层</li>
+<li>其次就是处理器内部的Cache，其下就是主存储器<ul>
+<li>使用Cache的优点是只需要<strong>增加少许成本</strong>，整个系统的性能就能得到<strong>显著提高</strong>，目前嵌入式系统采用SARM作为Cache</li>
+</ul>
+</li>
+<li>最后一层是容量很大、速度最慢的外部存储器</li>
+</ul>
+<h3 id="考点8-存储器分类"><a href="#考点8-存储器分类" class="headerlink" title="考点8 存储器分类"></a>考点8 存储器分类</h3><h5 id="嵌入式系统使用的存储器分类"><a href="#嵌入式系统使用的存储器分类" class="headerlink" title="嵌入式系统使用的存储器分类"></a>嵌入式系统使用的存储器分类</h5><ul>
+<li>按照其<strong>存取特性</strong>分<ul>
+<li>随机存取存储器（RAM）</li>
+<li>只读存储器（ROM）</li>
+</ul>
+</li>
+<li>按照<strong>存储信息的不同</strong>分<ul>
+<li>程序存储器</li>
+<li>数据存储器</li>
+</ul>
+</li>
+<li>按照<strong>所处物理位置</strong>分<ul>
+<li>片内存储器（芯片内置的存储器）</li>
+<li>片外存储器（外部扩展的存储器）</li>
+<li>外部存储设备</li>
+</ul>
+</li>
+<li>嵌入式系统中把片内存储器及片外存储器简称为<strong>主存储器或主存</strong>；把外部存储设备简称为<strong>辅助存储器</strong></li>
+</ul>
+<h5 id="嵌入式系统主存种类"><a href="#嵌入式系统主存种类" class="headerlink" title="嵌入式系统主存种类"></a>嵌入式系统主存种类</h5><ol>
+<li>半导体存储器<ol>
+<li>RAM<ul>
+<li><strong>SRAM</strong>-静态随机存取存储器</li>
+<li><strong>DRAM</strong>-动态随机存取存储器</li>
+</ul>
+</li>
+<li>ROM<ul>
+<li><strong>MROM</strong>-掩膜型只读存储器</li>
+<li><strong>PROM</strong>-一次可编程只读存储器</li>
+<li><strong>EPROM</strong>-紫外线可擦除可编程只读存储器</li>
+<li><strong>E<sup>2</sup>PROM</strong>-电可擦除可编程只读存储器</li>
+<li><strong>Flash ROM</strong>-闪速存储器（NOR与NAND两类）</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>新型存储器<ul>
+<li><strong>FRAM</strong>-铁电存取存储器</li>
+<li><strong>MRAM</strong>-磁性随机存取存储器</li>
+</ul>
+</li>
+</ol>
+<h4 id="1、RAM"><a href="#1、RAM" class="headerlink" title="1、RAM"></a>1、RAM</h4><ul>
+<li>有两种形式，分别为静态和动态，均为<strong>易失性存储器</strong>，现在多数嵌入式处理器内嵌的数据存储器都采用SRAM，而外部扩展的存储器多采用DRAM及其改进型</li>
+<li>DRAM开发的新品种主要如下：<ul>
+<li>DDR SDRAM，<ul>
+<li>新的内存标准之一，双边沿触发传送数据，把数据传输速率提高了一倍</li>
+<li>可预读取2位数据</li>
+</ul>
+</li>
+<li>DDR2<ul>
+<li>把DDR的数据传输速率提高了两倍</li>
+<li>可预读取4位数据</li>
+</ul>
+</li>
+<li>DDR3<ul>
+<li>把DDR的数据传输速率提高了4倍</li>
+<li>可预读取8位数据</li>
+</ul>
+</li>
+<li>DDR4<ul>
+<li>把DDR的数据传输速率提高了八倍</li>
+<li>一种使用Single-ended Signaling信号，其传输速率为1.6~3.2GB/s</li>
+<li>另一种基于差分信号技术，其传输速率将可以达到<strong>6.4GB/s</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="2、ROM"><a href="#2、ROM" class="headerlink" title="2、ROM"></a>2、ROM</h4><ul>
+<li>MROM<ul>
+<li>MROM是基于掩膜工艺技术的只读存储器，主要用于<strong>不可升级的成熟产品存储程序</strong>或<strong>不变的参数</strong>等信息</li>
+</ul>
+</li>
+<li>PROM<ul>
+<li>PROM是一次可编程只读存储器，<strong>只能一次编程，一旦编程完毕则无法修改</strong></li>
+</ul>
+</li>
+<li>EPROM<ul>
+<li>EPROM是紫外线可擦除可编程只读存储器，擦除编程次数<strong>十万次</strong>以内，<strong>编程速度慢</strong>，<strong>擦除时间长</strong></li>
+</ul>
+</li>
+<li>E<sup>2</sup>PROM<ul>
+<li>E<sup>2</sup>PROM是电可擦除可编程只读存储器，可以在线改写和擦除信息，无需紫外线照射</li>
+</ul>
+</li>
+<li>Flash ROM<ul>
+<li>特点是擦除和编程速度快，得名闪速存储器，简称<strong>闪存</strong></li>
+</ul>
+</li>
+<li>NOR Flash ROM<ul>
+<li>NOR Flash颠覆了原先由EPROM和E<sup>2</sup>PROM一统天下的局面</li>
+<li>NOR Flash ROM是<strong>以字节为单位随机存取</strong>。这样，应用程序可以直接在Flash ROM中执行，不必再把程序代码预先读入到RAM中</li>
+<li>与NAND Flash ROM相比，NOR Flash ROM的接口简单，可以直接连接到处理器的外围总线上（而NAND Flash ROM必须配置专用的NAND Flash ROM控制器或采用通常的I/O接口才能使用）。但是NOR Flash ROM<strong>写入和擦除速度较慢</strong>，影响了它的性能。</li>
+</ul>
+</li>
+<li>NAND Flash ROM<ul>
+<li>NAND Flash结构，单元电路尺寸几乎只是NOR器件的一半</li>
+<li>NAND Flash ROM<strong>以页（行）为单位随机存取</strong></li>
+<li>对比NOR Flash ROM，NAND Flash在容量、使用寿命和成本方面有较大优势。但是它的<strong>读出速度稍慢，编程较为复杂</strong>，因此<strong>大多作为数据存储器</strong>使用。</li>
+<li>嵌入式产品中包括数码相机、MP3随身听记忆卡、体积小巧的U盘等均采用NAND Flash ROM</li>
+</ul>
+</li>
+</ul>
+<h4 id="3、FRAM"><a href="#3、FRAM" class="headerlink" title="3、FRAM"></a>3、FRAM</h4><ul>
+<li>FRAM的铁电晶体的稳定性极高，它就既具有只读存储器<strong>非易失性</strong>的特点，又具有随机存储器可快速随机读写的特点，而且速度快、功耗低，</li>
+<li>目前不仅被应用到嵌入式微处理器内部以取代SRAM和Flash存储器，而且在其他嵌入式应用领域的应用越来越广泛</li>
+</ul>
+<h4 id="4、MRAM"><a href="#4、MRAM" class="headerlink" title="4、MRAM"></a>4、MRAM</h4><ul>
+<li>MRAM是一种<strong>非易失性</strong>（或非挥发性）的磁性随机存储器，具有SRAM的高速存取能力以及DRAM的高集成度，而且基本上可以<strong>无限次地重复写入</strong></li>
+</ul>
+<h3 id="考点9-存储器主要性能指标"><a href="#考点9-存储器主要性能指标" class="headerlink" title="考点9 存储器主要性能指标"></a>考点9 存储器主要性能指标</h3><h4 id="1、容量"><a href="#1、容量" class="headerlink" title="1、容量"></a>1、容量</h4><ul>
+<li>存储器容量是指每一个存储芯片或模块能够存储的<strong>二进制位数</strong>。</li>
+<li>存储器容量以存储1位二进制位为最小单位(b)，容量单位有字节(B)、千字节(KB)、兆字节(MB)、吉字节(GB)、太字节(TB)、拍字节(PB)、艾字节(EB)、泽字节(ZB)、尧字节(YB)</li>
+<li>对于内存容量来说，这些容量单位之间的相互关系均以2<sup>10</sup>倍表示</li>
+<li>对于外存容量来说，这些容量单位之间的相互关系均以10<sup>3</sup>倍表示</li>
+<li>内存储器有多大容量取决于存储单元的个数和存储器各单元的位数。<ul>
+<li><strong>内存容量=单元总数 x 数据位数 / 单元</strong></li>
+</ul>
+</li>
+<li>单元个数与存储器的地址线有密切关系，因此存储芯片的容量完全取决于存储器芯片的地址线条数和数据线的位数。<ul>
+<li>假设单元个数为L，数据线位（条）数用N表示，地址线条数用M表示，容量用V表示</li>
+<li><strong>V=L x N=2<sup>M</sup> x N</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="2、存取时间"><a href="#2、存取时间" class="headerlink" title="2、存取时间"></a>2、存取时间</h4><ul>
+<li>存取时间是从CPU给出有效的存储器地址开始到存储器读出数据（或者是把数据写入存储器）所需要的时间</li>
+<li>存储器芯片的工作速度通常用存取时间来衡量。由于现在的存储器都较快，内存的存取时间通常以<strong>ns</strong>为单位</li>
+</ul>
+<h4 id="3、宽度"><a href="#3、宽度" class="headerlink" title="3、宽度"></a>3、宽度</h4><ul>
+<li>存储器的带宽指每秒可传输（读出/写入）的最大数据总量，存储器带宽与存储器总线频率有关，也与数据位数（宽度）和每个总线周期的传输次数有关。</li>
+<li>并行总线的存储器带宽<ul>
+<li><strong>带宽=总线频率 x 数据宽度 / 8 x 传输次数 / 总线周期 （B/s）</strong></li>
+</ul>
+</li>
+<li>串行总线的存储器带宽<ul>
+<li>串行总线按位顺序传输，其带宽的计算公式如下，通常串行总线以10位为一个数据帧（含一字节数据）</li>
+<li><strong>带宽=总线频率 x 1 / 10 （B/s）</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="考点10-片内存储器"><a href="#考点10-片内存储器" class="headerlink" title="考点10 片内存储器"></a>考点10 片内存储器</h3><h4 id="1、片内Cache"><a href="#1、片内Cache" class="headerlink" title="1、片内Cache"></a>1、片内Cache</h4><ul>
+<li>嵌入式微处理器内部集成了几KB到几百KB，有的达到几MB的Cache，有的嵌入式微处理器内部有片内一级Cache，还有二级Cache</li>
+<li>借助内部Cache，系统<strong>减少了访问外部存储器的次数</strong>，<strong>提高了系统运行效率</strong>，在性能高的嵌入式处理器中都会集成内部Cache</li>
+</ul>
+<h4 id="2、片内Flash-ROM"><a href="#2、片内Flash-ROM" class="headerlink" title="2、片内Flash ROM"></a>2、片内Flash ROM</h4><ul>
+<li>大部分嵌入式微控制器内部集成有一定容量的Flash ROM作为程序存储器，从几KB到几MB不等</li>
+<li>有了内置Flash，嵌入式系统就可以<strong>以最小系统形式</strong>（无需外接程序存储器）应用到各个领域，充分体现了嵌入式系统的专用性和嵌入性</li>
+</ul>
+<h4 id="3、片内Flash-SRAM"><a href="#3、片内Flash-SRAM" class="headerlink" title="3、片内Flash SRAM"></a>3、片内Flash SRAM</h4><ul>
+<li>嵌入式微处理器内部集成了几KB到几MB不等的SRAM作为数据存储器，用来临时存放系统运行过程中的数据、 变量、中间结果等</li>
+<li>由于SRAM是易失性存储器，因此系统复位后要对SRAM<strong>进行初始化操作</strong></li>
+</ul>
+<h4 id="4、片内E2PROM"><a href="#4、片内E2PROM" class="headerlink" title="4、片内E2PROM"></a>4、片内E<sup>2</sup>PROM</h4><ul>
+<li>相当一部分嵌入式微控制器内部还配置了几KB到几MB不等的E<sup>2</sup>PROM作为长期保存重要数据的存储器</li>
+<li>因为是非易失性存储器，掉电后信息保持不变，因此<strong>常用于存放系统的设置和配置信息以及希望长期保存且很少改写的一些数据</strong></li>
+</ul>
+<h4 id="5、片内FRAM"><a href="#5、片内FRAM" class="headerlink" title="5、片内FRAM"></a>5、片内FRAM</h4><ul>
+<li>目前已有部分嵌入式微控制器内部集成了FRAM，由于它具有RAM和ROM的全部特点，因此既可当作RAM用，又可当做ROM用，是当前嵌入式微控制器内部的主要存储器之一</li>
+</ul>
+<h3 id="考点11-片外存储器"><a href="#考点11-片外存储器" class="headerlink" title="考点11 片外存储器"></a>考点11 片外存储器</h3><h4 id="1、片外程序存储器"><a href="#1、片外程序存储器" class="headerlink" title="1、片外程序存储器"></a>1、片外程序存储器</h4><ul>
+<li><strong>NOR Flash ROM</strong><ul>
+<li>主要有Intel的E28F系列、AMD的AM29系列、SST的SST39系列、SPANSION的S29系列</li>
+</ul>
+</li>
+<li><strong>NAND Flash ROM</strong><ul>
+<li>主要有三星的K9系列、现代的HY27系列、ST的NAND系列、东芝的TC58系列</li>
+</ul>
+</li>
+</ul>
+<h4 id="2、片外数据存储器"><a href="#2、片外数据存储器" class="headerlink" title="2、片外数据存储器"></a>2、片外数据存储器</h4><ul>
+<li>嵌入式系统使用的外部数据存储器有SDRAM、DDR系列等。早期的ARM芯片仅支持SDRAM ，新型的ARM芯片如Cortex-A系列还支持DDR系列存储器</li>
+<li>现代公司生产的DDR存储器命名规则为<code>HYXZmnjk</code><ul>
+<li>HY为<strong>现代标识</strong></li>
+<li>X为<strong>存储器类型</strong><ul>
+<li>5和57表示SDRAM，5D表示DDR</li>
+</ul>
+</li>
+<li>Z为<strong>电压级别</strong><ul>
+<li>U表示2.5V，V表示3.3V，空白表示5V</li>
+</ul>
+</li>
+<li>m表示<strong>总容量</strong><ul>
+<li>对于SDRAM，64和65表示64MB，26和28表示128MB，56和52表示256MB</li>
+<li>对于DDR，28表示128MB，56表示256MB，12表示512MB</li>
+</ul>
+</li>
+<li>n表示<strong>数据宽度</strong><ul>
+<li>16表示16位位宽，32表示32位位宽</li>
+</ul>
+</li>
+<li>j表示<strong>逻辑BANK数</strong><ul>
+<li>1表示2个BANK，2表示4个BANK，3表示8个BANK，实际上是选择BANK的输入引脚个数</li>
+</ul>
+</li>
+<li>k表示<strong>电气接口</strong><ul>
+<li>0表示LVTLL，1表示SSTL，2表示SSTL_2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="考点12-外部辅助设备"><a href="#考点12-外部辅助设备" class="headerlink" title="考点12 外部辅助设备"></a>考点12 外部辅助设备</h3><ul>
+<li>常见类型的闪存卡<ul>
+<li><strong>SD卡</strong>、<strong>CF卡</strong>、SM卡、XD卡、MMC、记忆棒</li>
+</ul>
+</li>
+<li>U盘<ul>
+<li>全称USB闪存盘，英文名为USB Flash disk。是一种<strong>使用USB接口的无需物理驱动</strong>的移动存储产品，通过USB接口与系统连接，<strong>实现即插即用</strong></li>
+</ul>
+</li>
+<li>微硬盘<ul>
+<li>最早由IBM公司开发，其最初的容量为340MB和512MB，现在有1GB、16GB、60GB、240GB等等</li>
+<li>特点<ul>
+<li>超大容量</li>
+<li>使用寿命长</li>
+<li>带有缓存</li>
+<li>无需外置电源</li>
+<li>高速传输</li>
+<li>接口多样，兼容性好</li>
+<li>高防振性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="考点13-通用I-O接口GPIO"><a href="#考点13-通用I-O接口GPIO" class="headerlink" title="考点13 通用I/O接口GPIO"></a>考点13 通用I/O接口GPIO</h3><ul>
+<li>所有嵌入式处理器内部均集成了GPIO接口，GPIO接口提供的<strong>输入具有缓冲功能</strong>，<strong>输出具有锁存功能</strong></li>
+<li>有的嵌入式处理器芯片通过<strong>设置端口的方向</strong>来确定是输人功能还是输出功能，也有的嵌入式处理器直接根据<strong>读写命令自动控制</strong>输入或输出的方向。GPIO一般具有三态，即<strong>0态、1态和高阻态</strong></li>
+<li>有些GPIO有多种功能以供选择，有<strong>两功能的、三功能的、四功能</strong>的，可以通过<strong>设置相关控制寄存器的位</strong>来确定引脚功能。有些ARM芯片，如新唐科技的Cortex-M0芯片每个引脚都可以<strong>设置成中断输入</strong></li>
+<li>典型的1位GPIO输入/输出接口<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320151734160.png" alt="image-20210320151734160"></li>
+</ul>
+</li>
+</ul>
+<h3 id="考点14-集成电脑互联总线接口I2C"><a href="#考点14-集成电脑互联总线接口I2C" class="headerlink" title="考点14 集成电脑互联总线接口I2C"></a>考点14 集成电脑互联总线接口I<sup>2</sup>C</h3><h4 id="1、I2C的概述"><a href="#1、I2C的概述" class="headerlink" title="1、I2C的概述"></a>1、I<sup>2</sup>C的概述</h4><ul>
+<li>集成电路互连（Inter IC，I<sup>2</sup>C）总线用于连接嵌入式处理器及其外围器件，它是广泛采用的一种<strong>串行半双工</strong>传输的总线标准，可以方便地用来将微控制器和外围器件连接起来构成一个系统</li>
+<li>主动发起数据传输操作的I<sup>2</sup>C器件是<strong>主控器件</strong>，否则它就是<strong>从器件</strong></li>
+<li>I<sup>2</sup>C总线具有<strong>接口线少</strong>，<strong>控制方式简单</strong>，<strong>器件封装紧凑</strong>，<strong>通信速率较高</strong>（100kb/s，400kb/s，高速模式可达3.4MB/s）等优点</li>
+</ul>
+<h4 id="2、I2C总线的操作时序"><a href="#2、I2C总线的操作时序" class="headerlink" title="2、I2C总线的操作时序"></a>2、I<sup>2</sup>C总线的操作时序</h4><ul>
+<li>I<sup>2</sup>C总线只有两条信号线，一条是数据线SDA，另一条线是时钟线SCL，所有的操作都通过这两条信号线完成。</li>
+<li>SDA上的数据必须在时钟的高电平周期保持稳定，它的高低电平状态只有在SCL是低电平时才能改变</li>
+</ul>
+<h5 id="I2C总线数据传输时序"><a href="#I2C总线数据传输时序" class="headerlink" title="I2C总线数据传输时序"></a>I<sup>2</sup>C总线数据传输时序</h5><ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320152629259.png" alt="image-20210320152629259"></li>
+<li><strong>启动和停止条件</strong><ul>
+<li>总线上的所有器件都不使用总线时（<strong>总线空闲</strong>），<strong>SCL线和SDA线</strong>各自的上拉电阻把<strong>电平拉高</strong> ，使它们均处于高电平</li>
+</ul>
+</li>
+<li><strong>数据传送格式</strong><ul>
+<li>数据传送时高位在前，低位在后，每次传送的<strong>字节数目没有限制</strong>。传输操作启动后主控器件传输的<strong>第一字节是地址</strong></li>
+</ul>
+</li>
+<li><strong>应答ACK信号传送</strong><ul>
+<li>为了完成一字节的传送，接收方应该发送一个确认信号ACK给发送方。ACK信号出现在SCL的<strong>第9个时钟脉冲</strong>上，有效应答ACK在SDA上呈现低电平</li>
+</ul>
+</li>
+<li><strong>读/写操作</strong><ul>
+<li>在发送模式下，数据被发送出去后，I<sup>2</sup>C接口将处于等待状态（SCL线将保持低电平），直到有新的数据写入I<sup>2</sup>C数据发送寄存器之后，SCL线才被释放，继续发送数据</li>
+<li>在接收模式下，I<sup>2</sup>C接口接收到数据后，将处于等待状态，直到数据接收寄存器内容被读取后，SCL线才被释放，继续发送数据</li>
+</ul>
+</li>
+<li><strong>总线仲裁</strong><ul>
+<li>I<sup>2</sup>C总线属于<strong>多主总线</strong>，即允许总线上有一个或多个主控器件和若干从器件同时进行操作</li>
+<li>总线上连接的这些器件有时会同时竞争总线的控制权，这就需要进行仲裁。I<sup>2</sup>C总线主控权的仲裁有一套规约。</li>
+</ul>
+</li>
+<li><strong>异常中断条件</strong><ul>
+<li>如果没有一个从器件对主控器件发出的地址进行确认，那么SDA线将保持为高电平</li>
+<li>如果主控器件涉入异常中断，在从器件接收到最后一个数据字节后，主器件将通过<strong>取消一个ACK信号的产生</strong>来通知从器件传送操作结束</li>
+</ul>
+</li>
+</ul>
+<h4 id="3、I2C总线接口的连接"><a href="#3、I2C总线接口的连接" class="headerlink" title="3、I2C总线接口的连接"></a>3、I<sup>2</sup>C总线接口的连接</h4><ul>
+<li>ARM芯片内部集成了I<sup>2</sup>C总线接口，因此可直接将基于I<sup>2</sup>C总线的主控器件或被控器件挂接到I<sup>2</sup>C总线上。每个器件的I<sup>2</sup>C总线信号SCL和SDA与<strong>其他具有I<sup>2</sup>C总线的处理器</strong>或<strong>设备同名端</strong>相连，在SCL和SDA线上要接上拉电阻</li>
+<li>在ARM芯片中内置了I<sup>2</sup>C总线控制器，I<sup>2</sup>C总线在主器件和从器件之间进行数据传输之前，必须根据要求设置相应的I<sup>2</sup>C的有关功能寄存器，包括I<sup>2</sup>C总线控制寄存器、I<sup>2</sup>C总线状态寄存器、I<sup>2</sup>C总线地址寄存器、I<sup>2</sup>C总线接收/发送数据移位寄存器</li>
+</ul>
+<h3 id="考点15-串行外设接口SPI"><a href="#考点15-串行外设接口SPI" class="headerlink" title="考点15 串行外设接口SPI"></a>考点15 串行外设接口SPI</h3><h4 id="1、SPI简介"><a href="#1、SPI简介" class="headerlink" title="1、SPI简介"></a>1、SPI简介</h4><ul>
+<li>SPI是一种<strong>同步串行外设接口</strong>，允许嵌入式处理器与各种外围设备以串行方式进行通信、数据交换。</li>
+<li>基于SPI接口的外围设备主要包括Flash ROM、RAM、A/D转换器、网络控制器、MCU等</li>
+<li>SPI系统可直接与各个厂家生产的多种标准外围器件直接相连，一般使用4条线：<ul>
+<li>串行时钟线<strong>SCK</strong>、主机输入/从机输出数据线<strong>MISO</strong>、主机输出/从机输入数据线<strong>MOSI</strong>、低电平有效的从机选择线<strong>SSEL</strong></li>
+<li>有的SPI接口芯片带有中断信号线INT，有的SPI接口芯片没有MOSI</li>
+</ul>
+</li>
+</ul>
+<h4 id="2、SPI的操作过程"><a href="#2、SPI的操作过程" class="headerlink" title="2、SPI的操作过程"></a>2、SPI的操作过程</h4><ul>
+<li>将数据写到SPI发送缓冲区后，在时钟信号SCK作用下，<strong>一位一位按位传输</strong></li>
+<li>在主机中数据从移位寄存器中自左向右发出送到从机(MOSI)，同时从机中的数据自右向左发到主机(MISO)，<strong>经过8个时钟周期完成1字节的发送</strong></li>
+<li>输入字节保留在移位寄存器中，然后从接收缓冲区中读出1字节的数据。</li>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320154842123.png" alt="image-20210320154842123"></li>
+</ul>
+<h4 id="3、SPI接口的连接"><a href="#3、SPI接口的连接" class="headerlink" title="3、SPI接口的连接"></a>3、SPI接口的连接</h4><ul>
+<li>一主一从式系统<ul>
+<li>接收和发送数据是<strong>单向</strong>的。主机SCK作为同步时钟输出到从机，主机SSEL接高电平，从机SSEL接低电平</li>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320160336929.png" alt="image-20210320160336929"></li>
+</ul>
+</li>
+<li>互为主从式系统<ul>
+<li>MISO和MOSI以及SCK都是<strong>双向</strong>的，视发送或接收而定，SSEL电平不能固定，如果作为主机，则设置SSEL位低电平，迫使对方作为从机</li>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320160535377.png" alt="image-20210320160535377"></li>
+</ul>
+</li>
+<li>一主多从式系统<ul>
+<li>大部分应用场合使用比较多的是一主多从式SP结构，SPI的所有信号都是<strong>单向</strong>的，主机MOSI和SCK都为输出，MISO位输入，主机SSEL接高电平，作为主机使用。由于系统中有多个从机，因此使用主机的I/O引脚去选择要访问的从机，即GPIO的某些引脚连接从机的SSEL端</li>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320160801232.png" alt="image-20210320160801232"></li>
+</ul>
+</li>
+<li>多主多从式系统<ul>
+<li>对于多主多从的SPI系统，MISO、MOSI及SCK视何时作为主机使用而定，主要考虑的是<strong>SSEL选择信号的接法</strong>，即每个主/从机的SSEL被其他主/从机选择，其他主/从机的GPIO引脚都参与主/从机的选择。这是最复杂的情况，实际应用系统中，尤其是嵌人式系统用得不多。 </li>
+<li><img src="https://cdn.jsdelivr.net/gh/FengYJ120/CDN-Article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/image-20210320161016487.png" alt="image-20210320161016487"></li>
+</ul>
+</li>
+</ul>
+<h3 id="考点16-串行异步通信接口UART"><a href="#考点16-串行异步通信接口UART" class="headerlink" title="考点16 串行异步通信接口UART"></a>考点16 串行异步通信接口UART</h3><h3 id="考点17-通用串行总线USB"><a href="#考点17-通用串行总线USB" class="headerlink" title="考点17 通用串行总线USB"></a>考点17 通用串行总线USB</h3><h3 id="考点18-高清多媒体接口HDMI"><a href="#考点18-高清多媒体接口HDMI" class="headerlink" title="考点18 高清多媒体接口HDMI"></a>考点18 高清多媒体接口HDMI</h3><h3 id="考点19-常用简单输入设备"><a href="#考点19-常用简单输入设备" class="headerlink" title="考点19 常用简单输入设备"></a>考点19 常用简单输入设备</h3><h3 id="考点20-常用简单输出设备"><a href="#考点20-常用简单输出设备" class="headerlink" title="考点20 常用简单输出设备"></a>考点20 常用简单输出设备</h3><h3 id="考点21-S3C2410-S3C2440芯片的内部结构"><a href="#考点21-S3C2410-S3C2440芯片的内部结构" class="headerlink" title="考点21 S3C2410,S3C2440芯片的内部结构"></a>考点21 S3C2410,S3C2440芯片的内部结构</h3><h3 id="考点22-S3C2410的时钟及电源管理组件"><a href="#考点22-S3C2410的时钟及电源管理组件" class="headerlink" title="考点22 S3C2410的时钟及电源管理组件"></a>考点22 S3C2410的时钟及电源管理组件</h3><h3 id="考点23-S3C2410-的中断控制器及中断控制"><a href="#考点23-S3C2410-的中断控制器及中断控制" class="headerlink" title="考点23 S3C2410 的中断控制器及中断控制"></a>考点23 S3C2410 的中断控制器及中断控制</h3><h3 id="考点24-S3C2410的实时时钟RTC"><a href="#考点24-S3C2410的实时时钟RTC" class="headerlink" title="考点24 S3C2410的实时时钟RTC"></a>考点24 S3C2410的实时时钟RTC</h3><h3 id="考点25-S3C2410的通用IO结构GPIO"><a href="#考点25-S3C2410的通用IO结构GPIO" class="headerlink" title="考点25 S3C2410的通用IO结构GPIO"></a>考点25 S3C2410的通用IO结构GPIO</h3><h3 id="考点26-S3C2410串行通信接口UART"><a href="#考点26-S3C2410串行通信接口UART" class="headerlink" title="考点26 S3C2410串行通信接口UART"></a>考点26 S3C2410串行通信接口UART</h3><h3 id="考点27-S3C2410的I2C总线接口"><a href="#考点27-S3C2410的I2C总线接口" class="headerlink" title="考点27 S3C2410的I2C总线接口"></a>考点27 S3C2410的I<sup>2</sup>C总线接口</h3><h3 id="考点28-S3C2410的看门狗定时器"><a href="#考点28-S3C2410的看门狗定时器" class="headerlink" title="考点28 S3C2410的看门狗定时器"></a>考点28 S3C2410的看门狗定时器</h3><h3 id="考点29-基于UART的RS-232-485接口"><a href="#考点29-基于UART的RS-232-485接口" class="headerlink" title="考点29 基于UART的RS-232,485接口"></a>考点29 基于UART的RS-232,485接口</h3><h3 id="考点30-CAN总线接口"><a href="#考点30-CAN总线接口" class="headerlink" title="考点30 CAN总线接口"></a>考点30 CAN总线接口</h3><h3 id="考点31-以太网通信接口"><a href="#考点31-以太网通信接口" class="headerlink" title="考点31 以太网通信接口"></a>考点31 以太网通信接口</h3><h3 id="考点32-常用无线通信接口"><a href="#考点32-常用无线通信接口" class="headerlink" title="考点32 常用无线通信接口"></a>考点32 常用无线通信接口</h3><h2 id="第四章-嵌入式系统软件"><a href="#第四章-嵌入式系统软件" class="headerlink" title="第四章-嵌入式系统软件"></a>第四章-嵌入式系统软件</h2><h3 id="考点1-嵌入式系统的软件组成"><a href="#考点1-嵌入式系统的软件组成" class="headerlink" title="考点1 嵌入式系统的软件组成"></a>考点1 嵌入式系统的软件组成</h3><h3 id="考点2-硬件抽象层与板级支持包"><a href="#考点2-硬件抽象层与板级支持包" class="headerlink" title="考点2 硬件抽象层与板级支持包"></a>考点2 硬件抽象层与板级支持包</h3><h3 id="考点3-引导加载程序"><a href="#考点3-引导加载程序" class="headerlink" title="考点3 引导加载程序"></a>考点3 引导加载程序</h3><h3 id="考点4-设备驱动程序的概念"><a href="#考点4-设备驱动程序的概念" class="headerlink" title="考点4 设备驱动程序的概念"></a>考点4 设备驱动程序的概念</h3><h3 id="考点5-实时系统与实时操作系统"><a href="#考点5-实时系统与实时操作系统" class="headerlink" title="考点5 实时系统与实时操作系统"></a>考点5 实时系统与实时操作系统</h3><h3 id="考点6-嵌入式操作系统概述"><a href="#考点6-嵌入式操作系统概述" class="headerlink" title="考点6 嵌入式操作系统概述"></a>考点6 嵌入式操作系统概述</h3><h3 id="考点7-Linux内核"><a href="#考点7-Linux内核" class="headerlink" title="考点7 Linux内核"></a>考点7 Linux内核</h3><h3 id="考点8-嵌入式Linux操作系统"><a href="#考点8-嵌入式Linux操作系统" class="headerlink" title="考点8 嵌入式Linux操作系统"></a>考点8 嵌入式Linux操作系统</h3><h3 id="考点9-Android操作系统"><a href="#考点9-Android操作系统" class="headerlink" title="考点9 Android操作系统"></a>考点9 Android操作系统</h3><h3 id="考点10-IOS操作系统"><a href="#考点10-IOS操作系统" class="headerlink" title="考点10 IOS操作系统"></a>考点10 IOS操作系统</h3><h3 id="考点11-uC-OS-II操作系统特点"><a href="#考点11-uC-OS-II操作系统特点" class="headerlink" title="考点11 uC,OS-II操作系统特点"></a>考点11 uC,OS-II操作系统特点</h3><h3 id="考点12-uC-OS-II任务及其管理"><a href="#考点12-uC-OS-II任务及其管理" class="headerlink" title="考点12 uC,OS-II任务及其管理"></a>考点12 uC,OS-II任务及其管理</h3><h3 id="考点13-uC-OS-II的系统服务"><a href="#考点13-uC-OS-II的系统服务" class="headerlink" title="考点13 uC,OS-II的系统服务"></a>考点13 uC,OS-II的系统服务</h3><h3 id="考点14-uC-OS-II应用程序设计"><a href="#考点14-uC-OS-II应用程序设计" class="headerlink" title="考点14 uC,OS-II应用程序设计"></a>考点14 uC,OS-II应用程序设计</h3><h2 id="第五章-嵌入式系统开发"><a href="#第五章-嵌入式系统开发" class="headerlink" title="第五章-嵌入式系统开发"></a>第五章-嵌入式系统开发</h2><h3 id="考点1-开发嵌入式系统的基础知识"><a href="#考点1-开发嵌入式系统的基础知识" class="headerlink" title="考点1 开发嵌入式系统的基础知识"></a>考点1 开发嵌入式系统的基础知识</h3><h3 id="考点2-嵌入式系统的开发平台与工具"><a href="#考点2-嵌入式系统的开发平台与工具" class="headerlink" title="考点2 嵌入式系统的开发平台与工具"></a>考点2 嵌入式系统的开发平台与工具</h3><h3 id="考点3-嵌入式系统的调试"><a href="#考点3-嵌入式系统的调试" class="headerlink" title="考点3 嵌入式系统的调试"></a>考点3 嵌入式系统的调试</h3><h3 id="考点4-ADS1-2工具软件"><a href="#考点4-ADS1-2工具软件" class="headerlink" title="考点4 ADS1.2工具软件"></a>考点4 ADS1.2工具软件</h3><h3 id="考点5-RVDS"><a href="#考点5-RVDS" class="headerlink" title="考点5 RVDS"></a>考点5 RVDS</h3><h3 id="考点6-GNU"><a href="#考点6-GNU" class="headerlink" title="考点6 GNU"></a>考点6 GNU</h3><h3 id="考点7-Web服务器"><a href="#考点7-Web服务器" class="headerlink" title="考点7 Web服务器"></a>考点7 Web服务器</h3>
         </div><!-- .entry-content -->
         <div class="single-reward">
           <div class="reward-open">赏
@@ -2208,7 +2762,7 @@ gitalk.render('gitalk-container')
               <span style="color: #f99; padding-left: 16px">
                 <i class="fa fa-line-chart"  aria-hidden="true""></i>
                 博客全站共 
-                <span class="post-count">25.6k</span>
+                <span class="post-count">33.1k</span>
                 字
               </span>             
               <span style="color: #f99; padding-left: 20px">
